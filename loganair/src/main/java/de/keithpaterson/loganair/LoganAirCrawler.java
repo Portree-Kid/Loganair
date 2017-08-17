@@ -118,19 +118,7 @@ public class LoganAirCrawler {
 			icaoLookup.put(k.toString().trim(), v.toString());
 		});
 
-		CredentialsProvider credsProvider = new BasicCredentialsProvider();
 
-		credsProvider.setCredentials(AuthScope.ANY, new UsernamePasswordCredentials("paterson", "KePaMi-0114-147"));
-
-		clientBuilder.useSystemProperties();
-
-		clientBuilder.setProxy(new HttpHost("172.16.26.151", 81));
-		clientBuilder.setDefaultCredentialsProvider(credsProvider);
-		clientBuilder.setProxyAuthenticationStrategy(new ProxyAuthenticationStrategy());
-
-		Lookup<AuthSchemeProvider> authProviders = RegistryBuilder.<AuthSchemeProvider>create()
-				.register(AuthSchemes.BASIC, new BasicSchemeFactory()).build();
-		clientBuilder.setDefaultAuthSchemeRegistry(authProviders);
 		URIBuilder url = new URIBuilder("https://www.loganair.co.uk/appwidgets/cinch/getStatus.php");
 		// url.addParameter("airportName", "GLASGOW");
 		// url.addParameter("flightType", "1");
