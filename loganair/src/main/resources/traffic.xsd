@@ -1,0 +1,53 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="trafficlist">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="aircraft" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="model"/>
+              <xs:element type="xs:string" name="livery"/>
+              <xs:element type="xs:string" name="airline"/>
+              <xs:element type="xs:string" name="home-port"/>
+              <xs:element type="xs:string" name="required-aircraft"/>
+              <xs:element type="xs:string" name="actype"/>
+              <xs:element type="xs:byte" name="offset"/>
+              <xs:element type="xs:byte" name="radius"/>
+              <xs:element type="xs:string" name="flighttype"/>
+              <xs:element type="xs:string" name="performance-class"/>
+              <xs:element type="xs:string" name="registration"/>
+              <xs:element type="xs:string" name="heavy"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="flight" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="callsign"/>
+              <xs:element type="xs:string" name="required-aircraft"/>
+              <xs:element type="xs:string" name="fltrules"/>
+              <xs:element name="departure">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="port"/>
+                    <xs:element type="xs:string" name="time"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:short" name="cruise-alt"/>
+              <xs:element name="arrival">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="port"/>
+                    <xs:element type="xs:string" name="time"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="repeat"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

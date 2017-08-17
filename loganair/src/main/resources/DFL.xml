@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<trafficlist xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="traffic.xsd">
+  <aircraft>
+    <model></model>
+    <livery></livery>
+    <airline>
+  </airline>
+    <home-port></home-port>
+    <required-aircraft></required-aircraft>
+    <actype></actype>
+    <offset>2</offset>
+    <radius>2</radius>
+    <flighttype></flighttype>
+    <performance-class></performance-class>
+    <registration></registration>
+    <heavy>false</heavy>
+  </aircraft>
+  <flight>
+    <callsign></callsign>
+    <required-aircraft></required-aircraft>
+  </flight>
+</trafficlist>
