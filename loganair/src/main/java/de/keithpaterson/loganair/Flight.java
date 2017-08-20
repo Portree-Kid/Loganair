@@ -19,7 +19,7 @@ public class Flight implements Serializable {
 	private String from;
 
 	ArrayList<FlightLeg> legs = new ArrayList<FlightLeg>();
-	boolean[] days = new boolean[7];
+	boolean[] days = new boolean[8];
 
 	private String number;
 
