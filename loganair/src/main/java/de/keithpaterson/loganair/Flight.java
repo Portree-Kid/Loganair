@@ -19,11 +19,11 @@ public class Flight implements Serializable {
 	private String from;
 
 	ArrayList<FlightLeg> legs = new ArrayList<FlightLeg>();
-	boolean[] days = new boolean[8];
-
+	
 	private String number;
 
 	private String to;
+	private int day;
 
 	public Flight(String flightNumber) {
 		number = flightNumber;
@@ -125,7 +125,7 @@ public class Flight implements Serializable {
 			String date = depTime.split(" ")[1] + " " + cal.get(Calendar.YEAR);
 			SimpleDateFormat f = new SimpleDateFormat("dd-MMM yyyy");
 			cal.setTime(f.parse(date));
-			days[cal.get(Calendar.DAY_OF_WEEK)] = true;
+			day = cal.get(Calendar.DAY_OF_WEEK);
 		}
 
 		if (leg.getDepartureTime() != null && (departureTime == null || leg.getDepartureTime().before(departureTime))) {
@@ -159,8 +159,8 @@ public class Flight implements Serializable {
 		this.to = legs.get(legs.size() - 1).getTo();
 	}
 
-	public boolean[] getDays() {
-		return days;
+	public int getDay() {
+		return day;
 	}
 
 }

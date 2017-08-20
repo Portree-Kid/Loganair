@@ -37,7 +37,7 @@ public class Airport {
 	
 	@Override
 	public String toString() {
-		return icao + "\t" + name + "\t" + basedAircraft;
+		return String.format( "%5s %-10s %d", icao, name, basedAircraft );
 	}
 	public void increaseBasedAircraft() {
 		basedAircraft++;
