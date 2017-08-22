@@ -128,7 +128,7 @@ public class LoganAirCrawler {
 			System.out.println(k);
 			icaoLookup.put(k.toString().trim(), v.toString());
 		});
-		
+
 		loadAircraft();
 		initAirportSize();
 
@@ -204,7 +204,7 @@ public class LoganAirCrawler {
 
 	private static void initAirportSize() {
 		airportSize = new HashMap<String, Integer>();
-		//Big ones
+		// Big ones
 		airportSize.put("EGPA", 3);
 		airportSize.put("EGPB", 3);
 		airportSize.put("EGPC", 3);
@@ -217,8 +217,7 @@ public class LoganAirCrawler {
 		airportSize.put("EGYC", 3);
 		airportSize.put("EIDW", 3);
 		airportSize.put("ENBR", 3);
-				
-		
+
 		airportSize.put("EGPI", 2);
 		airportSize.put("EGPR", 2);
 		airportSize.put("EGPU", 2);
@@ -226,15 +225,15 @@ public class LoganAirCrawler {
 		airportSize.put("EGNS", 2);
 		airportSize.put("EGPL", 2);
 		airportSize.put("EGJJ", 2);
-		
+
 		airportSize.put("EGEP", 1);
-		airportSize.put("EGEW", 1);			
-		airportSize.put("EGEN", 1);	
+		airportSize.put("EGEW", 1);
+		airportSize.put("EGEN", 1);
 		airportSize.put("EGER", 1);
-		airportSize.put("EGES", 1);			
-		airportSize.put("EGET", 1);	
-				
-//		airportSize.put(key, value)
+		airportSize.put("EGES", 1);
+		airportSize.put("EGET", 1);
+
+		// airportSize.put(key, value)
 	}
 
 	private static void loadAircraft() throws JAXBException, SAXException, IOException {
@@ -275,14 +274,16 @@ public class LoganAirCrawler {
 	private static void output(ArrayList<Flight> flights) throws JAXBException, IOException, SAXException {
 		System.out.println("Dumping " + flights.size() + " flights");
 		Trafficlist t = new Trafficlist();
+		t.getAircraft().addAll(aircraftLookup.values());
 		for (Flight flight : flights) {
 			DateFormat tf = DateFormat.getTimeInstance();
 			for (FlightLeg leg : flight.getLegs()) {
 
 				Trafficlist.Flight jaxbFlight = new Trafficlist.Flight();
-				jaxbFlight.setCallsign("LOG_" + flight.getNumber());
+				jaxbFlight.setCallsign("Logan_" + flight.getNumber().replaceAll("BE", ""));
 				jaxbFlight.setFltrules("VFR");
 				jaxbFlight.setRequiredAircraft(getAircraft(flight));
+				jaxbFlight.setCruiseAlt(getFlightlevel(flight));
 				Departure departure = new Departure();
 				departure.setPort(leg.getFrom());
 				departure.setTime((flight.getDay() - 1) + "/" + tf.format(leg.getDepartureTime()));
@@ -311,13 +312,8 @@ public class LoganAirCrawler {
 	}
 
 	private static String getAircraft(Flight flight) {
-		int size = Math.min(airportSize.get(flight.getTo()),airportSize.get(flight.getFrom()));
-		for(FlightLeg leg: flight.getLegs())
-		{
-			size = Math.min(size, airportSize.get(leg.getFrom()));
-			size = Math.min(size, airportSize.get(leg.getTo()));
-		}
-		
+		int size = getFlightAircraftSize(flight);
+
 		switch (size) {
 		case 1:
 			return "LOG_BN_2";
@@ -326,11 +322,36 @@ public class LoganAirCrawler {
 		case 3:
 			return "LOG-2000";
 		}
-//		if (flight.getTo().equalsIgnoreCase("EGPI") || flight.getFrom().equalsIgnoreCase("EGPI")
-//				|| flight.getTo().equalsIgnoreCase("EGPR") || flight.getFrom().equalsIgnoreCase("EGPR")
-//				|| flight.getTo().equalsIgnoreCase("EGPU") || flight.getFrom().equalsIgnoreCase("EGPU")) {
-		
-		return null;
+		return "UNKNOWN";
+	}
+	
+	/**
+	 * Guess the size of plane.
+	 * @param flight
+	 * @return
+	 */
+
+	private static int getFlightAircraftSize(Flight flight) {		
+		int size = Math.min(airportSize.get(flight.getTo()), airportSize.get(flight.getFrom()));
+		for (FlightLeg leg : flight.getLegs()) {
+			size = Math.min(size, airportSize.get(leg.getFrom()));
+			size = Math.min(size, airportSize.get(leg.getTo()));
+		}
+		return size;
+	}
+
+	private static short getFlightlevel(Flight flight) {
+		int size = getFlightAircraftSize(flight);
+
+		switch (size) {
+		case 1:
+			return 50;
+		case 2:
+			return 90;
+		case 3:
+			return 10;
+		}
+		return 50;
 	}
 
 	/**
@@ -396,6 +417,8 @@ public class LoganAirCrawler {
 			legArray[i] = new HashMap<String, Flight>();
 		}
 
+		// We go forward and if we find a "FROM" then we have a base and will not accept the "TO"
+		// We end up with a good approx then
 		for (Flight flight : flights) {
 			int index = flight.getDay() - 1;
 			HashMap<String, Airport> bases = baseArray[index];
