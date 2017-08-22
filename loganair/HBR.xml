@@ -13,8 +13,8 @@
     <actype></actype>
     <offset>0</offset>
     <radius>8</radius>
-    <flighttype></flighttype>
-    <performance-class></performance-class>
+    <flighttype>gate</flighttype>
+    <performance-class>turboprop_transport</performance-class>
     <registration>G-HEBO</registration>
     <heavy>false</heavy>
   </aircraft>
@@ -27,8 +27,8 @@
     <actype></actype>
     <offset>0</offset>
     <radius>8</radius>
-    <flighttype></flighttype>
-    <performance-class></performance-class>
+    <flighttype>gate</flighttype>
+    <performance-class>turboprop_transport</performance-class>
     <registration>G-HEBS</registration>
     <heavy>false</heavy>
   </aircraft>
