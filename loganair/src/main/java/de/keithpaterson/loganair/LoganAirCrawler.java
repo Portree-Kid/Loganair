@@ -95,6 +95,7 @@ public class LoganAirCrawler {
 	static HashMap<String, Flight> flightLookup[] = new HashMap[8];
 	private static HashMap<String, String> icaoLookup = new HashMap<>();
 	private static Hashtable<String, Aircraft> aircraftLookup = new Hashtable<>();
+	private static HashMap<String, Integer> airportSize;
 
 	public static void main(String[] args)
 			throws UnirestException, ClientProtocolException, IOException, URISyntaxException, XPathExpressionException,
@@ -127,8 +128,26 @@ public class LoganAirCrawler {
 			System.out.println(k);
 			icaoLookup.put(k.toString().trim(), v.toString());
 		});
-
+		
 		loadAircraft();
+		initAirportSize();
+
+		if (System.getProperty("pwd") != null) {
+			CredentialsProvider credsProvider = new BasicCredentialsProvider();
+
+			credsProvider.setCredentials(AuthScope.ANY,
+					new UsernamePasswordCredentials(System.getProperty("user"), System.getProperty("pwd")));
+
+			clientBuilder.useSystemProperties();
+
+			clientBuilder.setProxy(new HttpHost("172.16.26.151", 81));
+			clientBuilder.setDefaultCredentialsProvider(credsProvider);
+			clientBuilder.setProxyAuthenticationStrategy(new ProxyAuthenticationStrategy());
+
+			Lookup<AuthSchemeProvider> authProviders = RegistryBuilder.<AuthSchemeProvider>create()
+					.register(AuthSchemes.BASIC, new BasicSchemeFactory()).build();
+			clientBuilder.setDefaultAuthSchemeRegistry(authProviders);
+		}
 
 		URIBuilder url = new URIBuilder("https://www.loganair.co.uk/appwidgets/cinch/getStatus.php");
 		// url.addParameter("airportName", "GLASGOW");
@@ -183,6 +202,41 @@ public class LoganAirCrawler {
 		output();
 	}
 
+	private static void initAirportSize() {
+		airportSize = new HashMap<String, Integer>();
+		//Big ones
+		airportSize.put("EGPA", 3);
+		airportSize.put("EGPB", 3);
+		airportSize.put("EGPC", 3);
+		airportSize.put("EGPD", 3);
+		airportSize.put("EGPE", 3);
+		airportSize.put("EGPF", 3);
+		airportSize.put("EGPH", 3);
+		airportSize.put("EGCC", 3);
+		airportSize.put("EGPO", 3);
+		airportSize.put("EGYC", 3);
+		airportSize.put("EIDW", 3);
+		airportSize.put("ENBR", 3);
+				
+		
+		airportSize.put("EGPI", 2);
+		airportSize.put("EGPR", 2);
+		airportSize.put("EGPU", 2);
+		airportSize.put("EGEC", 2);
+		airportSize.put("EGNS", 2);
+		airportSize.put("EGPL", 2);
+		airportSize.put("EGJJ", 2);
+		
+		airportSize.put("EGEP", 1);
+		airportSize.put("EGEW", 1);			
+		airportSize.put("EGEN", 1);	
+		airportSize.put("EGER", 1);
+		airportSize.put("EGES", 1);			
+		airportSize.put("EGET", 1);	
+				
+//		airportSize.put(key, value)
+	}
+
 	private static void loadAircraft() throws JAXBException, SAXException, IOException {
 		SchemaFactory factory = SchemaFactory.newInstance("http://www.w3.org/2001/XMLSchema");
 		Schema schema = factory.newSchema(new File("traffic.xsd"));
@@ -228,15 +282,7 @@ public class LoganAirCrawler {
 				Trafficlist.Flight jaxbFlight = new Trafficlist.Flight();
 				jaxbFlight.setCallsign("LOG_" + flight.getNumber());
 				jaxbFlight.setFltrules("VFR");
-				if (flight.getTo().equalsIgnoreCase("EGPI") || flight.getFrom().equalsIgnoreCase("EGPI")
-						|| flight.getTo().equalsIgnoreCase("EGPR") || flight.getFrom().equalsIgnoreCase("EGPR")
-						|| flight.getTo().equalsIgnoreCase("EGPU") || flight.getFrom().equalsIgnoreCase("EGPU")) {
-					jaxbFlight.setCruiseAlt((short) 90);
-					jaxbFlight.setRequiredAircraft("log-dh6");
-				} else {
-					jaxbFlight.setCruiseAlt((short) 160);
-					jaxbFlight.setRequiredAircraft("LOG-2000");
-				}
+				jaxbFlight.setRequiredAircraft(getAircraft(flight));
 				Departure departure = new Departure();
 				departure.setPort(leg.getFrom());
 				departure.setTime((flight.getDay() - 1) + "/" + tf.format(leg.getDepartureTime()));
@@ -262,6 +308,29 @@ public class LoganAirCrawler {
 
 		fw.close();
 
+	}
+
+	private static String getAircraft(Flight flight) {
+		int size = Math.min(airportSize.get(flight.getTo()),airportSize.get(flight.getFrom()));
+		for(FlightLeg leg: flight.getLegs())
+		{
+			size = Math.min(size, airportSize.get(leg.getFrom()));
+			size = Math.min(size, airportSize.get(leg.getTo()));
+		}
+		
+		switch (size) {
+		case 1:
+			return "LOG_BN_2";
+		case 2:
+			return "log-dh6";
+		case 3:
+			return "LOG-2000";
+		}
+//		if (flight.getTo().equalsIgnoreCase("EGPI") || flight.getFrom().equalsIgnoreCase("EGPI")
+//				|| flight.getTo().equalsIgnoreCase("EGPR") || flight.getFrom().equalsIgnoreCase("EGPR")
+//				|| flight.getTo().equalsIgnoreCase("EGPU") || flight.getFrom().equalsIgnoreCase("EGPU")) {
+		
+		return null;
 	}
 
 	/**
@@ -317,17 +386,18 @@ public class LoganAirCrawler {
 
 	private static void getBases(ArrayList<Flight> flights) {
 		Collections.sort(flights, new DepartureTimeComparator(true));
-		
+
+		// Bases for each day. Helps to verify
 		HashMap<String, Airport>[] baseArray = new HashMap[7];
 		HashMap<String, Flight>[] legArray = new HashMap[7];
-		
+
 		for (int i = 0; i < baseArray.length; i++) {
 			baseArray[i] = new HashMap<String, Airport>();
 			legArray[i] = new HashMap<String, Flight>();
 		}
 
 		for (Flight flight : flights) {
-			int index = flight.getDay()-1;
+			int index = flight.getDay() - 1;
 			HashMap<String, Airport> bases = baseArray[index];
 			HashMap<String, Flight> lastLeg = legArray[index];
 			if (!lastLeg.containsKey(flight.getFrom()) && !lastLeg.containsKey(flight.getTo())) {
@@ -345,9 +415,12 @@ public class LoganAirCrawler {
 		}
 		for (int i = 0; i < baseArray.length; i++) {
 			System.out.println(" -- Day " + i + " -- ");
+			int allAircraft = 0;
 			for (Airport a : baseArray[i].values()) {
 				System.out.println(a);
+				allAircraft += a.getBasedAircraft();
 			}
+			System.out.println("Number of Aircraft : " + allAircraft);
 		}
 
 	}

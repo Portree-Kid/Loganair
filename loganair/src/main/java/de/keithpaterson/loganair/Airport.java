@@ -39,6 +39,12 @@ public class Airport {
 	public String toString() {
 		return String.format( "%5s %-10s %d", icao, name, basedAircraft );
 	}
+	public int getBasedAircraft() {
+		return basedAircraft;
+	}
+	public HashMap<String, Flight> getLastLeg() {
+		return lastLeg;
+	}
 	public void increaseBasedAircraft() {
 		basedAircraft++;
 	}
