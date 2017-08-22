@@ -7,9 +7,37 @@
        Shetland Island=EGPB
        Foula = EG42
        Papa Stour = EG79-->
+  <aircraft>
+    <model>Aircraft/BN-2/BN-2-Directflight.xml</model>
+    <livery>DFL</livery>
+    <airline>DFL</airline>
+    <home-port>EGET</home-port>
+    <required-aircraft>DFL_BN_2</required-aircraft>
+    <actype></actype>
+    <offset>0</offset>
+    <radius>8</radius>
+    <flighttype></flighttype>
+    <performance-class></performance-class>
+    <registration>G-SICA</registration>
+    <heavy>false</heavy>
+  </aircraft>
+  <aircraft>
+    <model>Aircraft/BN-2/BN-2-Directflight.xml</model>
+    <livery>DFL</livery>
+    <airline>DFL</airline>
+    <home-port>EGET</home-port>
+    <required-aircraft>DFL_BN_2</required-aircraft>
+    <actype></actype>
+    <offset>0</offset>
+    <radius>8</radius>
+    <flighttype></flighttype>
+    <performance-class></performance-class>
+    <registration>G-SICB</registration>
+    <heavy>false</heavy>
+  </aircraft>
   <flight>
     <callsign>DFL001</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EGET</port>
@@ -24,7 +52,7 @@
   </flight>
   <flight>
     <callsign>DFL002</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EGEF</port>
@@ -39,7 +67,7 @@
   </flight>
   <flight>
     <callsign>DFL021</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EGET</port>
@@ -54,7 +82,7 @@
   </flight>
   <flight>
     <callsign>DFL022</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EGEF</port>
@@ -69,7 +97,7 @@
   </flight>
   <flight>
     <callsign>DFL011</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EGET</port>
@@ -84,7 +112,7 @@
   </flight>
   <flight>
     <callsign>DFL012</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EGEF</port>
@@ -100,7 +128,7 @@
   <!-- Thuesday -->
   <flight>
     <callsign>DFL001</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EGET</port>
@@ -115,7 +143,7 @@
   </flight>
   <flight>
     <callsign>DFL002</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EGEF</port>
@@ -131,7 +159,7 @@
   <!-- Wednesday -->
   <flight>
     <callsign>DFL001</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EGET</port>
@@ -146,7 +174,7 @@
   </flight>
   <flight>
     <callsign>DFL002</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EGEF</port>
@@ -161,7 +189,7 @@
   </flight>
   <flight>
     <callsign>DFL011</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EGET</port>
@@ -176,7 +204,7 @@
   </flight>
   <flight>
     <callsign>DFL012</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EGEF</port>
@@ -192,7 +220,7 @@
   <!-- Thursday -->
   <flight>
     <callsign>DFL001</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EGET</port>
@@ -207,7 +235,7 @@
   </flight>
   <flight>
     <callsign>DFL002</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EGEF</port>
@@ -222,7 +250,7 @@
   </flight>
   <flight>
     <callsign>DFL011</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EGET</port>
@@ -237,7 +265,7 @@
   </flight>
   <flight>
     <callsign>DFL012</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EGEF</port>
@@ -253,7 +281,7 @@
   <!-- Friday -->
   <flight>
     <callsign>DFL001</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EGET</port>
@@ -268,7 +296,7 @@
   </flight>
   <flight>
     <callsign>DFL002</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EGEF</port>
@@ -283,7 +311,7 @@
   </flight>
   <flight>
     <callsign>DFL011</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EGET</port>
@@ -298,7 +326,7 @@
   </flight>
   <flight>
     <callsign>DFL012</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EGEF</port>
@@ -314,7 +342,7 @@
   <!-- Saturday -->
   <flight>
     <callsign>DFL001</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EGET</port>
@@ -329,7 +357,7 @@
   </flight>
   <flight>
     <callsign>DFL012</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EGEF</port>
@@ -346,7 +374,7 @@
   <!-- Monday -->
   <flight>
     <callsign>DFL001</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EGET</port>
@@ -361,7 +389,7 @@
   </flight>
   <flight>
     <callsign>DFL012</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EG42</port>
@@ -377,7 +405,7 @@
   <!-- Tuesday -->
   <flight>
     <callsign>DFL003</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EGET</port>
@@ -392,7 +420,7 @@
   </flight>
   <flight>
     <callsign>DFL004</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EG42</port>
@@ -407,7 +435,7 @@
   </flight>
   <flight>
     <callsign>DFL015</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EGET</port>
@@ -422,7 +450,7 @@
   </flight>
   <flight>
     <callsign>DFL016</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EG42</port>
@@ -438,7 +466,7 @@
   <!-- Wednesday -->
   <flight>
     <callsign>DFL003</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EGET</port>
@@ -453,7 +481,7 @@
   </flight>
   <flight>
     <callsign>DFL004</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EG42</port>
@@ -468,7 +496,7 @@
   </flight>
   <flight>
     <callsign>DFL015</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EGET</port>
@@ -483,7 +511,7 @@
   </flight>
   <flight>
     <callsign>DFL016</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EG42</port>
@@ -499,7 +527,7 @@
   <!-- Friday -->
   <flight>
     <callsign>DFL003</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EGET</port>
@@ -514,7 +542,7 @@
   </flight>
   <flight>
     <callsign>DFL004</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EG42</port>
@@ -529,7 +557,7 @@
   </flight>
   <flight>
     <callsign>DFL015</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EGET</port>
@@ -544,7 +572,7 @@
   </flight>
   <flight>
     <callsign>DFL016</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EG42</port>
@@ -561,7 +589,7 @@
   <!-- Papa Stour EG79-->
   <flight>
     <callsign>DFL007</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EGET</port>
@@ -576,7 +604,7 @@
   </flight>
   <flight>
     <callsign>DFL007</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EG79</port>
@@ -591,7 +619,7 @@
   </flight>
   <flight>
     <callsign>DFL019</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EGET</port>
@@ -606,7 +634,7 @@
   </flight>
   <flight>
     <callsign>DFL020</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EG79</port>
@@ -622,7 +650,7 @@
   <!-- Fair Isle Sumburgh -->
   <flight>
     <callsign>DFL010</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EGPB</port>
@@ -637,7 +665,7 @@
   </flight>
   <flight>
     <callsign>DFL009</callsign>
-    <required-aircraft>DFL_ISLANDER</required-aircraft>
+    <required-aircraft>DFL_BN_2</required-aircraft>
     <fltrules>VFR</fltrules>
     <departure>
       <port>EGEF</port>
