@@ -220,6 +220,9 @@ public class LoganAirCrawler {
 		airportSize.put("EIDW", 3);
 		airportSize.put("ENBR", 3);
 		airportSize.put("EGNX", 3);
+		airportSize.put("EGSS", 3);
+		airportSize.put("EGPN", 3);
+				
 		
 
 		airportSize.put("EGPI", 2);
