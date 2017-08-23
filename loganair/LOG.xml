@@ -1,7 +1,315 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <trafficlist>
+    <aircraft>
+        <model>Aircraft/BN-2/BN-2-Loganair.xml</model>
+        <livery>LOG</livery>
+        <airline>LOG</airline>
+        <home-port>EGET</home-port>
+        <required-aircraft>LOG_BN_2</required-aircraft>
+        <actype></actype>
+        <offset>0</offset>
+        <radius>8</radius>
+        <flighttype>gate</flighttype>
+        <performance-class>turboprop_transport</performance-class>
+        <registration>G-BLDV</registration>
+        <heavy>false</heavy>
+    </aircraft>
+    <aircraft>
+        <model>Aircraft/Saab-2000/Saab-2000-Loganair.xml</model>
+        <livery>LOG</livery>
+        <airline>LOG</airline>
+        <home-port>EGPF</home-port>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <actype>S20</actype>
+        <offset>0</offset>
+        <radius>14</radius>
+        <flighttype>gate</flighttype>
+        <performance-class>turboprop_transport</performance-class>
+        <registration>G-LGNT</registration>
+        <heavy>false</heavy>
+    </aircraft>
+    <aircraft>
+        <model>Aircraft/Saab-2000/Saab-2000-Loganair.xml</model>
+        <livery>LOG</livery>
+        <airline>LOG</airline>
+        <home-port>EGPF</home-port>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <actype>S20</actype>
+        <offset>0</offset>
+        <radius>14</radius>
+        <flighttype>gate</flighttype>
+        <performance-class>turboprop_transport</performance-class>
+        <registration>G-LGNS</registration>
+        <heavy>false</heavy>
+    </aircraft>
+    <aircraft>
+        <model>Aircraft/Saab-2000/Saab-2000-Loganair.xml</model>
+        <livery>LOG</livery>
+        <airline>LOG</airline>
+        <home-port>EGPF</home-port>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <actype>S20</actype>
+        <offset>0</offset>
+        <radius>14</radius>
+        <flighttype>gate</flighttype>
+        <performance-class>turboprop_transport</performance-class>
+        <registration>G-LGNR</registration>
+        <heavy>false</heavy>
+    </aircraft>
+    <aircraft>
+        <model>Aircraft/Saab-2000/Saab-2000-Loganair.xml</model>
+        <livery>LOG</livery>
+        <airline>LOG</airline>
+        <home-port>EGPF</home-port>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <actype>S20</actype>
+        <offset>0</offset>
+        <radius>14</radius>
+        <flighttype>gate</flighttype>
+        <performance-class>turboprop_transport</performance-class>
+        <registration>G-LGNP</registration>
+        <heavy>false</heavy>
+    </aircraft>
+    <aircraft>
+        <model>Aircraft/dhc6/dhc6-Loganair.xml</model>
+        <livery>LOG</livery>
+        <airline>LOG</airline>
+        <home-port>EGPF</home-port>
+        <required-aircraft>log-dh6</required-aircraft>
+        <actype>DHC6</actype>
+        <offset>1</offset>
+        <radius>12</radius>
+        <flighttype>gate</flighttype>
+        <performance-class>jet_transport</performance-class>
+        <registration>G-SGTS</registration>
+        <heavy>false</heavy>
+    </aircraft>
+    <aircraft>
+        <model>Aircraft/Saab-2000/Saab-2000-Loganair.xml</model>
+        <livery>LOG</livery>
+        <airline>LOG</airline>
+        <home-port>EGPF</home-port>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <actype>S20</actype>
+        <offset>0</offset>
+        <radius>14</radius>
+        <flighttype>gate</flighttype>
+        <performance-class>turboprop_transport</performance-class>
+        <registration>G-LGNO</registration>
+        <heavy>false</heavy>
+    </aircraft>
+    <aircraft>
+        <model>Aircraft/BN-2/BN-2-Loganair.xml</model>
+        <livery>LOG</livery>
+        <airline>LOG</airline>
+        <home-port>EGET</home-port>
+        <required-aircraft>LOG_BN_2</required-aircraft>
+        <actype></actype>
+        <offset>0</offset>
+        <radius>8</radius>
+        <flighttype>gate</flighttype>
+        <performance-class>turboprop_transport</performance-class>
+        <registration>G-BPCA</registration>
+        <heavy>false</heavy>
+    </aircraft>
+    <aircraft>
+        <model>Aircraft/saab-340/LOGAN-Saab-340.xml</model>
+        <livery>LOG</livery>
+        <airline>LOG</airline>
+        <home-port>EGPO</home-port>
+        <required-aircraft>log-340</required-aircraft>
+        <actype>Saab-340B</actype>
+        <offset>1</offset>
+        <radius>12</radius>
+        <flighttype>gate</flighttype>
+        <performance-class>jet_transport</performance-class>
+        <registration>G-LGNL</registration>
+        <heavy>false</heavy>
+    </aircraft>
+    <aircraft>
+        <model>Aircraft/saab-340/LOGAN-Saab-340.xml</model>
+        <livery>LOG</livery>
+        <airline>LOG</airline>
+        <home-port>EGPO</home-port>
+        <required-aircraft>LOG-340</required-aircraft>
+        <actype>Saab-340B</actype>
+        <offset>1</offset>
+        <radius>12</radius>
+        <flighttype>gate</flighttype>
+        <performance-class>jet_transport</performance-class>
+        <registration>G-LGNK</registration>
+        <heavy>false</heavy>
+    </aircraft>
+    <aircraft>
+        <model>Aircraft/saab-340/LOGAN-Saab-340.xml</model>
+        <livery>LOG</livery>
+        <airline>LOG</airline>
+        <home-port>EGPO</home-port>
+        <required-aircraft>log-340</required-aircraft>
+        <actype>Saab-340B</actype>
+        <offset>1</offset>
+        <radius>12</radius>
+        <flighttype>gate</flighttype>
+        <performance-class>jet_transport</performance-class>
+        <registration>G-LGNJ</registration>
+        <heavy>false</heavy>
+    </aircraft>
+    <aircraft>
+        <model>Aircraft/saab-340/LOGAN-Saab-340.xml</model>
+        <livery>LOG</livery>
+        <airline>LOG</airline>
+        <home-port>EGPO</home-port>
+        <required-aircraft>log-340</required-aircraft>
+        <actype>Saab-340B</actype>
+        <offset>1</offset>
+        <radius>12</radius>
+        <flighttype>gate</flighttype>
+        <performance-class>jet_transport</performance-class>
+        <registration>G-LGNI</registration>
+        <heavy>false</heavy>
+    </aircraft>
+    <aircraft>
+        <model>Aircraft/dhc6/dhc6-Loganair.xml</model>
+        <livery>LOG</livery>
+        <airline>LOG</airline>
+        <home-port>EGPF</home-port>
+        <required-aircraft>log-dh6</required-aircraft>
+        <actype>DHC6</actype>
+        <offset>1</offset>
+        <radius>12</radius>
+        <flighttype>gate</flighttype>
+        <performance-class>jet_transport</performance-class>
+        <registration>G-HIAL</registration>
+        <heavy>false</heavy>
+    </aircraft>
+    <aircraft>
+        <model>Aircraft/saab-340/LOGAN-Saab-340.xml</model>
+        <livery>LOG</livery>
+        <airline>LOG</airline>
+        <home-port>EGPO</home-port>
+        <required-aircraft>log-340</required-aircraft>
+        <actype>Saab-340B</actype>
+        <offset>1</offset>
+        <radius>12</radius>
+        <flighttype>gate</flighttype>
+        <performance-class>jet_transport</performance-class>
+        <registration>G-LGNH</registration>
+        <heavy>false</heavy>
+    </aircraft>
+    <aircraft>
+        <model>Aircraft/saab-340/LOGAN-Saab-340.xml</model>
+        <livery>LOG</livery>
+        <airline>LOG</airline>
+        <home-port>EGPO</home-port>
+        <required-aircraft>log-340</required-aircraft>
+        <actype>Saab-340B</actype>
+        <offset>1</offset>
+        <radius>12</radius>
+        <flighttype>gate</flighttype>
+        <performance-class>jet_transport</performance-class>
+        <registration>G-LGNG</registration>
+        <heavy>false</heavy>
+    </aircraft>
+    <aircraft>
+        <model>Aircraft/saab-340/LOGAN-Saab-340.xml</model>
+        <livery>LOG</livery>
+        <airline>LOG</airline>
+        <home-port>EGPO</home-port>
+        <required-aircraft>log-340</required-aircraft>
+        <actype>Saab-340B</actype>
+        <offset>1</offset>
+        <radius>12</radius>
+        <flighttype>gate</flighttype>
+        <performance-class>jet_transport</performance-class>
+        <registration>G-LGNF</registration>
+        <heavy>false</heavy>
+    </aircraft>
+    <aircraft>
+        <model>Aircraft/saab-340/LOGAN-Saab-340.xml</model>
+        <livery>LOG</livery>
+        <airline>LOG</airline>
+        <home-port>EGPO</home-port>
+        <required-aircraft>log-340</required-aircraft>
+        <actype>Saab-340B</actype>
+        <offset>1</offset>
+        <radius>12</radius>
+        <flighttype>gate</flighttype>
+        <performance-class>jet_transport</performance-class>
+        <registration>G-LGNE</registration>
+        <heavy>false</heavy>
+    </aircraft>
+    <aircraft>
+        <model>Aircraft/saab-340/LOGAN-Saab-340.xml</model>
+        <livery>LOG</livery>
+        <airline>LOG</airline>
+        <home-port>EGPO</home-port>
+        <required-aircraft>log-340</required-aircraft>
+        <actype>Saab-340B</actype>
+        <offset>1</offset>
+        <radius>12</radius>
+        <flighttype>gate</flighttype>
+        <performance-class>jet_transport</performance-class>
+        <registration>G-LGND</registration>
+        <heavy>false</heavy>
+    </aircraft>
+    <aircraft>
+        <model>Aircraft/saab-340/LOGAN-Saab-340.xml</model>
+        <livery>LOG</livery>
+        <airline>LOG</airline>
+        <home-port>EGPO</home-port>
+        <required-aircraft>log-340</required-aircraft>
+        <actype>Saab-340B</actype>
+        <offset>1</offset>
+        <radius>12</radius>
+        <flighttype>gate</flighttype>
+        <performance-class>jet_transport</performance-class>
+        <registration>G-LGNC</registration>
+        <heavy>false</heavy>
+    </aircraft>
+    <aircraft>
+        <model>Aircraft/saab-340/LOGAN-Saab-340.xml</model>
+        <livery>LOG</livery>
+        <airline>LOG</airline>
+        <home-port>EGPO</home-port>
+        <required-aircraft>log-340</required-aircraft>
+        <actype>Saab-340B</actype>
+        <offset>1</offset>
+        <radius>12</radius>
+        <flighttype>gate</flighttype>
+        <performance-class>jet_transport</performance-class>
+        <registration>G-LGNB</registration>
+        <heavy>false</heavy>
+    </aircraft>
+    <aircraft>
+        <model>Aircraft/saab-340/LOGAN-Saab-340.xml</model>
+        <livery>LOG</livery>
+        <airline>LOG</airline>
+        <home-port>EGPO</home-port>
+        <required-aircraft>log-340</required-aircraft>
+        <actype>Saab-340B</actype>
+        <offset>1</offset>
+        <radius>12</radius>
+        <flighttype>gate</flighttype>
+        <performance-class>jet_transport</performance-class>
+        <registration>G-LGNA</registration>
+        <heavy>false</heavy>
+    </aircraft>
+    <aircraft>
+        <model>Aircraft/dhc6/dhc6-Loganair.xml</model>
+        <livery>LOG</livery>
+        <airline>LOG</airline>
+        <home-port>EGPF</home-port>
+        <required-aircraft>log-dh6</required-aircraft>
+        <actype>DHC6</actype>
+        <offset>1</offset>
+        <radius>12</radius>
+        <flighttype>gate</flighttype>
+        <performance-class>jet_transport</performance-class>
+        <registration>G-BVVK</registration>
+        <heavy>false</heavy>
+    </aircraft>
     <flight>
-        <callsign>LOG_BE6648</callsign>
+        <callsign>Logan_6648</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -16,7 +324,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6647</callsign>
+        <callsign>Logan_6647</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -31,7 +339,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6647</callsign>
+        <callsign>Logan_6647</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -46,7 +354,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6886</callsign>
+        <callsign>Logan_6886</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -61,7 +369,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6928</callsign>
+        <callsign>Logan_6928</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -76,7 +384,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6848</callsign>
+        <callsign>Logan_6848</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -91,7 +399,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6947</callsign>
+        <callsign>Logan_6947</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -106,7 +414,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6606</callsign>
+        <callsign>Logan_6606</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -121,7 +429,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6847</callsign>
+        <callsign>Logan_6847</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -136,7 +444,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6927</callsign>
+        <callsign>Logan_6927</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -151,7 +459,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6877</callsign>
+        <callsign>Logan_6877</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -166,7 +474,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6976</callsign>
+        <callsign>Logan_6976</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -181,7 +489,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM377</callsign>
+        <callsign>Logan_377</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -196,7 +504,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM377</callsign>
+        <callsign>Logan_377</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -211,7 +519,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM377</callsign>
+        <callsign>Logan_377</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -226,7 +534,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6899</callsign>
+        <callsign>Logan_6899</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -241,7 +549,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6898</callsign>
+        <callsign>Logan_6898</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -256,7 +564,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6997</callsign>
+        <callsign>Logan_6997</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -271,7 +579,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6978</callsign>
+        <callsign>Logan_6978</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -286,7 +594,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6977</callsign>
+        <callsign>Logan_6977</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -301,7 +609,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6878</callsign>
+        <callsign>Logan_6878</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -316,7 +624,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM379</callsign>
+        <callsign>Logan_379</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -331,7 +639,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM379</callsign>
+        <callsign>Logan_379</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -346,7 +654,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM379</callsign>
+        <callsign>Logan_379</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -361,7 +669,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM379</callsign>
+        <callsign>Logan_379</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -376,7 +684,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6918</callsign>
+        <callsign>Logan_6918</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -391,7 +699,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6939</callsign>
+        <callsign>Logan_6939</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -406,7 +714,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6939</callsign>
+        <callsign>Logan_6939</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -421,7 +729,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6914</callsign>
+        <callsign>Logan_6914</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -436,7 +744,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6837</callsign>
+        <callsign>Logan_6837</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -451,7 +759,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6858</callsign>
+        <callsign>Logan_6858</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -466,7 +774,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6814</callsign>
+        <callsign>Logan_6814</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -481,7 +789,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6938</callsign>
+        <callsign>Logan_6938</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -496,7 +804,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6938</callsign>
+        <callsign>Logan_6938</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -511,7 +819,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6915</callsign>
+        <callsign>Logan_6915</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -526,7 +834,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6838</callsign>
+        <callsign>Logan_6838</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -541,7 +849,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6781</callsign>
+        <callsign>Logan_6781</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -556,7 +864,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6780</callsign>
+        <callsign>Logan_6780</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -571,7 +879,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6844</callsign>
+        <callsign>Logan_6844</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -586,7 +894,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6602</callsign>
+        <callsign>Logan_6602</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -601,7 +909,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6843</callsign>
+        <callsign>Logan_6843</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -616,7 +924,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6601</callsign>
+        <callsign>Logan_6601</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -631,7 +939,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6964</callsign>
+        <callsign>Logan_6964</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -646,7 +954,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6963</callsign>
+        <callsign>Logan_6963</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -661,7 +969,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6848</callsign>
+        <callsign>Logan_6848</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -676,7 +984,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6606</callsign>
+        <callsign>Logan_6606</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -691,7 +999,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6605</callsign>
+        <callsign>Logan_6605</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -706,7 +1014,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6847</callsign>
+        <callsign>Logan_6847</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -721,7 +1029,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6608</callsign>
+        <callsign>Logan_6608</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -736,7 +1044,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6607</callsign>
+        <callsign>Logan_6607</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -751,7 +1059,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM311</callsign>
+        <callsign>Logan_311</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -766,7 +1074,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM311</callsign>
+        <callsign>Logan_311</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -781,7 +1089,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6855</callsign>
+        <callsign>Logan_6855</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -796,7 +1104,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6976</callsign>
+        <callsign>Logan_6976</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -811,7 +1119,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6854</callsign>
+        <callsign>Logan_6854</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -826,7 +1134,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM312</callsign>
+        <callsign>Logan_312</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -841,7 +1149,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM312</callsign>
+        <callsign>Logan_312</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -856,7 +1164,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM312</callsign>
+        <callsign>Logan_312</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -871,7 +1179,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6975</callsign>
+        <callsign>Logan_6975</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -886,7 +1194,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6615</callsign>
+        <callsign>Logan_6615</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -901,7 +1209,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6857</callsign>
+        <callsign>Logan_6857</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -916,7 +1224,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6978</callsign>
+        <callsign>Logan_6978</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -931,7 +1239,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6856</callsign>
+        <callsign>Logan_6856</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -946,7 +1254,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6977</callsign>
+        <callsign>Logan_6977</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -961,7 +1269,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6851</callsign>
+        <callsign>Logan_6851</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -976,7 +1284,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6972</callsign>
+        <callsign>Logan_6972</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -991,7 +1299,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6971</callsign>
+        <callsign>Logan_6971</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1006,7 +1314,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6853</callsign>
+        <callsign>Logan_6853</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1021,7 +1329,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM313</callsign>
+        <callsign>Logan_313</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1036,7 +1344,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM313</callsign>
+        <callsign>Logan_313</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1051,7 +1359,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM313</callsign>
+        <callsign>Logan_313</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1066,7 +1374,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM314</callsign>
+        <callsign>Logan_314</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1081,7 +1389,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM314</callsign>
+        <callsign>Logan_314</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1096,7 +1404,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM314</callsign>
+        <callsign>Logan_314</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1111,7 +1419,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6852</callsign>
+        <callsign>Logan_6852</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1126,7 +1434,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM319</callsign>
+        <callsign>Logan_319</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1141,7 +1449,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM319</callsign>
+        <callsign>Logan_319</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1156,7 +1464,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM317</callsign>
+        <callsign>Logan_317</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1171,7 +1479,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM317</callsign>
+        <callsign>Logan_317</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1186,7 +1494,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM317</callsign>
+        <callsign>Logan_317</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1201,7 +1509,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM318</callsign>
+        <callsign>Logan_318</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1216,7 +1524,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM318</callsign>
+        <callsign>Logan_318</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1231,7 +1539,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM318</callsign>
+        <callsign>Logan_318</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1246,7 +1554,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6859</callsign>
+        <callsign>Logan_6859</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1261,7 +1569,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6858</callsign>
+        <callsign>Logan_6858</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1276,7 +1584,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6616</callsign>
+        <callsign>Logan_6616</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1291,7 +1599,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6860</callsign>
+        <callsign>Logan_6860</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1306,7 +1614,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6992</callsign>
+        <callsign>Logan_6992</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1321,7 +1629,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6876</callsign>
+        <callsign>Logan_6876</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1336,7 +1644,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6997</callsign>
+        <callsign>Logan_6997</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1351,7 +1659,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6994</callsign>
+        <callsign>Logan_6994</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1366,7 +1674,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6993</callsign>
+        <callsign>Logan_6993</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1381,7 +1689,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6875</callsign>
+        <callsign>Logan_6875</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1396,7 +1704,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6996</callsign>
+        <callsign>Logan_6996</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1411,7 +1719,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6995</callsign>
+        <callsign>Logan_6995</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1426,7 +1734,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6918</callsign>
+        <callsign>Logan_6918</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1441,7 +1749,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6919</callsign>
+        <callsign>Logan_6919</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1456,7 +1764,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6914</callsign>
+        <callsign>Logan_6914</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1471,7 +1779,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6916</callsign>
+        <callsign>Logan_6916</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1486,7 +1794,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6915</callsign>
+        <callsign>Logan_6915</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1501,7 +1809,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6882</callsign>
+        <callsign>Logan_6882</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1516,7 +1824,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6881</callsign>
+        <callsign>Logan_6881</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1531,7 +1839,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6921</callsign>
+        <callsign>Logan_6921</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1546,7 +1854,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6648</callsign>
+        <callsign>Logan_6648</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1561,7 +1869,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6922</callsign>
+        <callsign>Logan_6922</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1576,7 +1884,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6647</callsign>
+        <callsign>Logan_6647</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1591,7 +1899,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6647</callsign>
+        <callsign>Logan_6647</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1606,7 +1914,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6642</callsign>
+        <callsign>Logan_6642</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1621,7 +1929,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6642</callsign>
+        <callsign>Logan_6642</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1636,7 +1944,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6641</callsign>
+        <callsign>Logan_6641</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1651,7 +1959,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6644</callsign>
+        <callsign>Logan_6644</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1666,7 +1974,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6886</callsign>
+        <callsign>Logan_6886</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1681,7 +1989,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6643</callsign>
+        <callsign>Logan_6643</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1696,7 +2004,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6885</callsign>
+        <callsign>Logan_6885</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1711,7 +2019,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6808</callsign>
+        <callsign>Logan_6808</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1726,7 +2034,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6807</callsign>
+        <callsign>Logan_6807</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1741,7 +2049,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6928</callsign>
+        <callsign>Logan_6928</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1756,7 +2064,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6809</callsign>
+        <callsign>Logan_6809</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1771,7 +2079,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6925</callsign>
+        <callsign>Logan_6925</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1786,7 +2094,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6927</callsign>
+        <callsign>Logan_6927</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1801,7 +2109,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6926</callsign>
+        <callsign>Logan_6926</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1816,7 +2124,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6891</callsign>
+        <callsign>Logan_6891</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1831,7 +2139,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6770</callsign>
+        <callsign>Logan_6770</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1846,7 +2154,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6890</callsign>
+        <callsign>Logan_6890</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1861,7 +2169,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6772</callsign>
+        <callsign>Logan_6772</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1876,7 +2184,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6771</callsign>
+        <callsign>Logan_6771</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1891,7 +2199,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6892</callsign>
+        <callsign>Logan_6892</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1906,7 +2214,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6899</callsign>
+        <callsign>Logan_6899</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1921,7 +2229,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6778</callsign>
+        <callsign>Logan_6778</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1936,7 +2244,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6931</callsign>
+        <callsign>Logan_6931</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1951,7 +2259,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6931</callsign>
+        <callsign>Logan_6931</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1966,7 +2274,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6810</callsign>
+        <callsign>Logan_6810</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1981,7 +2289,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6898</callsign>
+        <callsign>Logan_6898</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -1996,7 +2304,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6813</callsign>
+        <callsign>Logan_6813</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2011,7 +2319,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6779</callsign>
+        <callsign>Logan_6779</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2026,7 +2334,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6774</callsign>
+        <callsign>Logan_6774</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2041,7 +2349,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6773</callsign>
+        <callsign>Logan_6773</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2056,7 +2364,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6930</callsign>
+        <callsign>Logan_6930</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2071,7 +2379,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6930</callsign>
+        <callsign>Logan_6930</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2086,7 +2394,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6897</callsign>
+        <callsign>Logan_6897</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2101,7 +2409,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6775</callsign>
+        <callsign>Logan_6775</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2116,7 +2424,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6939</callsign>
+        <callsign>Logan_6939</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2131,7 +2439,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6939</callsign>
+        <callsign>Logan_6939</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2146,7 +2454,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6814</callsign>
+        <callsign>Logan_6814</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2161,7 +2469,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6938</callsign>
+        <callsign>Logan_6938</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2176,7 +2484,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6938</callsign>
+        <callsign>Logan_6938</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2191,7 +2499,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6781</callsign>
+        <callsign>Logan_6781</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2206,7 +2514,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6780</callsign>
+        <callsign>Logan_6780</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2221,7 +2529,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6822</callsign>
+        <callsign>Logan_6822</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2236,7 +2544,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6821</callsign>
+        <callsign>Logan_6821</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2251,7 +2559,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6942</callsign>
+        <callsign>Logan_6942</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2266,7 +2574,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6823</callsign>
+        <callsign>Logan_6823</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2281,7 +2589,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6820</callsign>
+        <callsign>Logan_6820</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2296,7 +2604,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6829</callsign>
+        <callsign>Logan_6829</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2311,7 +2619,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6826</callsign>
+        <callsign>Logan_6826</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2326,7 +2634,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6947</callsign>
+        <callsign>Logan_6947</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2341,7 +2649,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6828</callsign>
+        <callsign>Logan_6828</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2356,7 +2664,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6832</callsign>
+        <callsign>Logan_6832</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2371,7 +2679,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6956</callsign>
+        <callsign>Logan_6956</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2386,7 +2694,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6956</callsign>
+        <callsign>Logan_6956</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2401,7 +2709,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6835</callsign>
+        <callsign>Logan_6835</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2416,7 +2724,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6955</callsign>
+        <callsign>Logan_6955</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2431,7 +2739,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6955</callsign>
+        <callsign>Logan_6955</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2446,7 +2754,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6955</callsign>
+        <callsign>Logan_6955</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2461,7 +2769,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LOG420</callsign>
+        <callsign>Logan_420</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2476,7 +2784,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6952</callsign>
+        <callsign>Logan_6952</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2491,7 +2799,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6952</callsign>
+        <callsign>Logan_6952</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2506,7 +2814,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6831</callsign>
+        <callsign>Logan_6831</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2521,7 +2829,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6951</callsign>
+        <callsign>Logan_6951</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2536,7 +2844,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6958</callsign>
+        <callsign>Logan_6958</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2551,7 +2859,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6837</callsign>
+        <callsign>Logan_6837</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2566,7 +2874,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6957</callsign>
+        <callsign>Logan_6957</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2581,7 +2889,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6836</callsign>
+        <callsign>Logan_6836</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2596,7 +2904,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6838</callsign>
+        <callsign>Logan_6838</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2611,7 +2919,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6844</callsign>
+        <callsign>Logan_6844</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2626,7 +2934,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6602</callsign>
+        <callsign>Logan_6602</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2641,7 +2949,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6843</callsign>
+        <callsign>Logan_6843</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2656,7 +2964,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6601</callsign>
+        <callsign>Logan_6601</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2671,7 +2979,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6964</callsign>
+        <callsign>Logan_6964</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2686,7 +2994,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6963</callsign>
+        <callsign>Logan_6963</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2701,7 +3009,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6848</callsign>
+        <callsign>Logan_6848</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2716,7 +3024,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6847</callsign>
+        <callsign>Logan_6847</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2731,7 +3039,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6605</callsign>
+        <callsign>Logan_6605</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2746,7 +3054,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6608</callsign>
+        <callsign>Logan_6608</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2761,7 +3069,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6855</callsign>
+        <callsign>Logan_6855</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2776,7 +3084,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6976</callsign>
+        <callsign>Logan_6976</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2791,7 +3099,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6854</callsign>
+        <callsign>Logan_6854</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2806,7 +3114,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6975</callsign>
+        <callsign>Logan_6975</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2821,7 +3129,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6857</callsign>
+        <callsign>Logan_6857</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2836,7 +3144,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6978</callsign>
+        <callsign>Logan_6978</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2851,7 +3159,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6856</callsign>
+        <callsign>Logan_6856</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2866,7 +3174,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6977</callsign>
+        <callsign>Logan_6977</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2881,7 +3189,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6851</callsign>
+        <callsign>Logan_6851</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2896,7 +3204,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6972</callsign>
+        <callsign>Logan_6972</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2911,7 +3219,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6971</callsign>
+        <callsign>Logan_6971</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2926,7 +3234,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6853</callsign>
+        <callsign>Logan_6853</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2941,7 +3249,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6852</callsign>
+        <callsign>Logan_6852</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2956,7 +3264,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6858</callsign>
+        <callsign>Logan_6858</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2971,7 +3279,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6901</callsign>
+        <callsign>Logan_6901</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -2986,7 +3294,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6862</callsign>
+        <callsign>Logan_6862</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3001,7 +3309,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6862</callsign>
+        <callsign>Logan_6862</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3016,7 +3324,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6861</callsign>
+        <callsign>Logan_6861</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3031,7 +3339,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6861</callsign>
+        <callsign>Logan_6861</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3046,7 +3354,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6902</callsign>
+        <callsign>Logan_6902</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3061,7 +3369,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6871</callsign>
+        <callsign>Logan_6871</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3076,7 +3384,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6992</callsign>
+        <callsign>Logan_6992</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3091,7 +3399,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6877</callsign>
+        <callsign>Logan_6877</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3106,7 +3414,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6997</callsign>
+        <callsign>Logan_6997</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3121,7 +3429,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6878</callsign>
+        <callsign>Logan_6878</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3136,7 +3444,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6872</callsign>
+        <callsign>Logan_6872</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3151,7 +3459,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6996</callsign>
+        <callsign>Logan_6996</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3166,7 +3474,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6995</callsign>
+        <callsign>Logan_6995</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3181,7 +3489,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6918</callsign>
+        <callsign>Logan_6918</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3196,7 +3504,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6919</callsign>
+        <callsign>Logan_6919</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3211,7 +3519,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6914</callsign>
+        <callsign>Logan_6914</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3226,7 +3534,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6915</callsign>
+        <callsign>Logan_6915</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3241,7 +3549,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6882</callsign>
+        <callsign>Logan_6882</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3256,7 +3564,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6881</callsign>
+        <callsign>Logan_6881</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3271,7 +3579,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6646</callsign>
+        <callsign>Logan_6646</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3286,7 +3594,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6646</callsign>
+        <callsign>Logan_6646</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3301,7 +3609,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6921</callsign>
+        <callsign>Logan_6921</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3316,7 +3624,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6645</callsign>
+        <callsign>Logan_6645</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3331,7 +3639,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6645</callsign>
+        <callsign>Logan_6645</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3346,7 +3654,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6648</callsign>
+        <callsign>Logan_6648</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3361,7 +3669,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6922</callsign>
+        <callsign>Logan_6922</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3376,7 +3684,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6647</callsign>
+        <callsign>Logan_6647</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3391,7 +3699,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6647</callsign>
+        <callsign>Logan_6647</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3406,7 +3714,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6642</callsign>
+        <callsign>Logan_6642</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3421,7 +3729,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6642</callsign>
+        <callsign>Logan_6642</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3436,7 +3744,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6641</callsign>
+        <callsign>Logan_6641</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3451,7 +3759,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6644</callsign>
+        <callsign>Logan_6644</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3466,7 +3774,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6643</callsign>
+        <callsign>Logan_6643</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3481,7 +3789,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6808</callsign>
+        <callsign>Logan_6808</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3496,7 +3804,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6928</callsign>
+        <callsign>Logan_6928</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3511,7 +3819,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6807</callsign>
+        <callsign>Logan_6807</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3526,7 +3834,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6809</callsign>
+        <callsign>Logan_6809</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3541,7 +3849,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6925</callsign>
+        <callsign>Logan_6925</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3556,7 +3864,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6927</callsign>
+        <callsign>Logan_6927</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3571,7 +3879,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6926</callsign>
+        <callsign>Logan_6926</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3586,7 +3894,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6891</callsign>
+        <callsign>Logan_6891</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3601,7 +3909,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6890</callsign>
+        <callsign>Logan_6890</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3616,7 +3924,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6772</callsign>
+        <callsign>Logan_6772</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3631,7 +3939,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6892</callsign>
+        <callsign>Logan_6892</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3646,7 +3954,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6771</callsign>
+        <callsign>Logan_6771</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3661,7 +3969,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6899</callsign>
+        <callsign>Logan_6899</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3676,7 +3984,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6778</callsign>
+        <callsign>Logan_6778</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3691,7 +3999,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6810</callsign>
+        <callsign>Logan_6810</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3706,7 +4014,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6931</callsign>
+        <callsign>Logan_6931</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3721,7 +4029,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6931</callsign>
+        <callsign>Logan_6931</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3736,7 +4044,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6898</callsign>
+        <callsign>Logan_6898</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3751,7 +4059,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6779</callsign>
+        <callsign>Logan_6779</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3766,7 +4074,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6774</callsign>
+        <callsign>Logan_6774</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3781,7 +4089,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LOG520</callsign>
+        <callsign>Logan_520</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3796,7 +4104,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6773</callsign>
+        <callsign>Logan_6773</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3811,7 +4119,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6930</callsign>
+        <callsign>Logan_6930</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3826,7 +4134,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6930</callsign>
+        <callsign>Logan_6930</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3841,7 +4149,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6897</callsign>
+        <callsign>Logan_6897</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3856,7 +4164,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6939</callsign>
+        <callsign>Logan_6939</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3871,7 +4179,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6939</callsign>
+        <callsign>Logan_6939</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3886,7 +4194,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6938</callsign>
+        <callsign>Logan_6938</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3901,7 +4209,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6938</callsign>
+        <callsign>Logan_6938</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3916,7 +4224,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6781</callsign>
+        <callsign>Logan_6781</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3931,7 +4239,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6780</callsign>
+        <callsign>Logan_6780</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3946,7 +4254,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6822</callsign>
+        <callsign>Logan_6822</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3961,7 +4269,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM322</callsign>
+        <callsign>Logan_322</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3976,7 +4284,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM322</callsign>
+        <callsign>Logan_322</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -3991,7 +4299,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM322</callsign>
+        <callsign>Logan_322</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4006,7 +4314,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6821</callsign>
+        <callsign>Logan_6821</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4021,7 +4329,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6942</callsign>
+        <callsign>Logan_6942</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4036,7 +4344,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM323</callsign>
+        <callsign>Logan_323</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4051,7 +4359,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM323</callsign>
+        <callsign>Logan_323</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4066,7 +4374,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM323</callsign>
+        <callsign>Logan_323</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4081,7 +4389,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6823</callsign>
+        <callsign>Logan_6823</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4096,7 +4404,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM321</callsign>
+        <callsign>Logan_321</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4111,7 +4419,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM321</callsign>
+        <callsign>Logan_321</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4126,7 +4434,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM327</callsign>
+        <callsign>Logan_327</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4141,7 +4449,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM327</callsign>
+        <callsign>Logan_327</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4156,7 +4464,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM327</callsign>
+        <callsign>Logan_327</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4171,7 +4479,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6820</callsign>
+        <callsign>Logan_6820</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4186,7 +4494,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM324</callsign>
+        <callsign>Logan_324</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4201,7 +4509,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM324</callsign>
+        <callsign>Logan_324</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4216,7 +4524,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM324</callsign>
+        <callsign>Logan_324</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4231,7 +4539,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6829</callsign>
+        <callsign>Logan_6829</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4246,7 +4554,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM328</callsign>
+        <callsign>Logan_328</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4261,7 +4569,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM328</callsign>
+        <callsign>Logan_328</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4276,7 +4584,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM328</callsign>
+        <callsign>Logan_328</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4291,7 +4599,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM329</callsign>
+        <callsign>Logan_329</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4306,7 +4614,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LM329</callsign>
+        <callsign>Logan_329</callsign>
         <required-aircraft>LOG_BN_2</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4321,7 +4629,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6826</callsign>
+        <callsign>Logan_6826</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4336,7 +4644,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6947</callsign>
+        <callsign>Logan_6947</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4351,7 +4659,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6832</callsign>
+        <callsign>Logan_6832</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4366,7 +4674,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6956</callsign>
+        <callsign>Logan_6956</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4381,7 +4689,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6956</callsign>
+        <callsign>Logan_6956</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4396,7 +4704,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6835</callsign>
+        <callsign>Logan_6835</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4411,7 +4719,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6955</callsign>
+        <callsign>Logan_6955</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4426,7 +4734,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6955</callsign>
+        <callsign>Logan_6955</callsign>
         <required-aircraft>log-dh6</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4441,7 +4749,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_LOG420</callsign>
+        <callsign>Logan_420</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4456,7 +4764,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6952</callsign>
+        <callsign>Logan_6952</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4471,7 +4779,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6831</callsign>
+        <callsign>Logan_6831</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4486,7 +4794,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6951</callsign>
+        <callsign>Logan_6951</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4501,7 +4809,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6958</callsign>
+        <callsign>Logan_6958</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4516,7 +4824,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6837</callsign>
+        <callsign>Logan_6837</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4531,7 +4839,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6957</callsign>
+        <callsign>Logan_6957</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4546,7 +4854,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6836</callsign>
+        <callsign>Logan_6836</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4561,7 +4869,7 @@
         <repeat>WEEK</repeat>
     </flight>
     <flight>
-        <callsign>LOG_BE6838</callsign>
+        <callsign>Logan_6838</callsign>
         <required-aircraft>LOG-2000</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
@@ -4572,6 +4880,2196 @@
         <arrival>
             <port>EGPA</port>
             <time>2/19:30:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6844</callsign>
+        <required-aircraft>log-dh6</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGEC</port>
+            <time>3/09:05:00</time>
+        </departure>
+        <cruise-alt>90</cruise-alt>
+        <arrival>
+            <port>EGPF</port>
+            <time>3/09:45:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6602</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPH</port>
+            <time>3/08:55:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGYC</port>
+            <time>3/10:20:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6843</callsign>
+        <required-aircraft>log-dh6</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPF</port>
+            <time>3/08:00:00</time>
+        </departure>
+        <cruise-alt>90</cruise-alt>
+        <arrival>
+            <port>EGEC</port>
+            <time>3/08:45:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6601</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGYC</port>
+            <time>3/07:00:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPH</port>
+            <time>3/08:25:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6964</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EIDW</port>
+            <time>3/12:40:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPE</port>
+            <time>3/14:00:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6963</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPE</port>
+            <time>3/10:50:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EIDW</port>
+            <time>3/12:10:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6848</callsign>
+        <required-aircraft>log-dh6</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGEC</port>
+            <time>3/17:30:00</time>
+        </departure>
+        <cruise-alt>90</cruise-alt>
+        <arrival>
+            <port>EGPF</port>
+            <time>3/18:10:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6847</callsign>
+        <required-aircraft>log-dh6</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPF</port>
+            <time>3/16:25:00</time>
+        </departure>
+        <cruise-alt>90</cruise-alt>
+        <arrival>
+            <port>EGEC</port>
+            <time>3/17:10:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6608</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPH</port>
+            <time>3/19:30:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGYC</port>
+            <time>3/20:50:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6607</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGYC</port>
+            <time>3/17:30:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPH</port>
+            <time>3/18:55:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6855</callsign>
+        <required-aircraft>log-dh6</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPF</port>
+            <time>3/13:00:00</time>
+        </departure>
+        <cruise-alt>90</cruise-alt>
+        <arrival>
+            <port>EGPR</port>
+            <time>3/14:15:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6976</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGCC</port>
+            <time>3/16:30:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPE</port>
+            <time>3/17:55:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6854</callsign>
+        <required-aircraft>log-dh6</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPU</port>
+            <time>3/10:10:00</time>
+        </departure>
+        <cruise-alt>90</cruise-alt>
+        <arrival>
+            <port>EGPF</port>
+            <time>3/11:05:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6975</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPE</port>
+            <time>3/14:40:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGCC</port>
+            <time>3/15:55:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6857</callsign>
+        <required-aircraft>log-dh6</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPF</port>
+            <time>3/16:35:00</time>
+        </departure>
+        <cruise-alt>90</cruise-alt>
+        <arrival>
+            <port>EGPU</port>
+            <time>3/17:35:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6978</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGCC</port>
+            <time>3/20:20:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPE</port>
+            <time>3/21:45:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6615</callsign>
+        <required-aircraft>log-dh6</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGYC</port>
+            <time>3/10:50:00</time>
+        </departure>
+        <cruise-alt>90</cruise-alt>
+        <arrival>
+            <port>EGJJ</port>
+            <time>3/12:05:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6856</callsign>
+        <required-aircraft>log-dh6</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPR</port>
+            <time>3/14:35:00</time>
+        </departure>
+        <cruise-alt>90</cruise-alt>
+        <arrival>
+            <port>EGPF</port>
+            <time>3/15:45:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6977</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPE</port>
+            <time>3/18:25:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGCC</port>
+            <time>3/19:35:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6851</callsign>
+        <required-aircraft>log-dh6</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPF</port>
+            <time>3/10:20:00</time>
+        </departure>
+        <cruise-alt>90</cruise-alt>
+        <arrival>
+            <port>EGPR</port>
+            <time>3/11:35:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6972</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGCC</port>
+            <time>3/08:40:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPE</port>
+            <time>3/10:05:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6971</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPE</port>
+            <time>3/06:40:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGCC</port>
+            <time>3/08:00:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6853</callsign>
+        <required-aircraft>log-dh6</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPF</port>
+            <time>3/08:50:00</time>
+        </departure>
+        <cruise-alt>90</cruise-alt>
+        <arrival>
+            <port>EGPU</port>
+            <time>3/09:50:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6852</callsign>
+        <required-aircraft>log-dh6</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPR</port>
+            <time>3/11:55:00</time>
+        </departure>
+        <cruise-alt>90</cruise-alt>
+        <arrival>
+            <port>EGPF</port>
+            <time>3/13:05:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6858</callsign>
+        <required-aircraft>log-dh6</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPU</port>
+            <time>3/17:55:00</time>
+        </departure>
+        <cruise-alt>90</cruise-alt>
+        <arrival>
+            <port>EGPF</port>
+            <time>3/18:50:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6616</callsign>
+        <required-aircraft>log-dh6</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGJJ</port>
+            <time>3/12:35:00</time>
+        </departure>
+        <cruise-alt>90</cruise-alt>
+        <arrival>
+            <port>EGYC</port>
+            <time>3/13:55:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6901</callsign>
+        <required-aircraft>log-dh6</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPO</port>
+            <time>3/07:40:00</time>
+        </departure>
+        <cruise-alt>90</cruise-alt>
+        <arrival>
+            <port>EGPL</port>
+            <time>3/08:10:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6902</callsign>
+        <required-aircraft>log-dh6</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPL</port>
+            <time>3/08:40:00</time>
+        </departure>
+        <cruise-alt>90</cruise-alt>
+        <arrival>
+            <port>EGPO</port>
+            <time>3/09:10:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6871</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGYC</port>
+            <time>3/06:50:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGCC</port>
+            <time>3/08:00:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6992</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPB</port>
+            <time>3/07:35:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPH</port>
+            <time>3/09:00:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6877</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGYC</port>
+            <time>3/18:15:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGCC</port>
+            <time>3/19:20:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6997</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPH</port>
+            <time>3/17:55:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPB</port>
+            <time>3/19:25:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6878</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGCC</port>
+            <time>3/20:15:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGYC</port>
+            <time>3/21:20:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6994</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPB</port>
+            <time>3/11:45:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPH</port>
+            <time>3/13:10:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6872</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGCC</port>
+            <time>3/08:40:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGYC</port>
+            <time>3/09:45:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6993</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPH</port>
+            <time>3/09:45:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPB</port>
+            <time>3/11:15:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6996</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPB</port>
+            <time>3/15:45:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPH</port>
+            <time>3/17:10:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6995</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPH</port>
+            <time>3/13:45:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPB</port>
+            <time>3/15:15:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6918</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPB</port>
+            <time>3/15:10:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPF</port>
+            <time>3/16:40:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6919</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPF</port>
+            <time>3/13:10:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPB</port>
+            <time>3/14:40:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6914</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>3/10:20:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPF</port>
+            <time>3/11:30:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6915</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPF</port>
+            <time>3/14:25:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>3/15:40:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6882</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPC</port>
+            <time>3/13:15:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPH</port>
+            <time>3/14:15:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6881</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPH</port>
+            <time>3/11:40:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPC</port>
+            <time>3/12:45:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6646</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGCC</port>
+            <time>3/16:40:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPF</port>
+            <time>3/17:45:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6646</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPF</port>
+            <time>3/18:15:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPO</port>
+            <time>3/19:10:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6921</callsign>
+        <required-aircraft>log-dh6</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPF</port>
+            <time>3/08:30:00</time>
+        </departure>
+        <cruise-alt>90</cruise-alt>
+        <arrival>
+            <port>EGPI</port>
+            <time>3/09:15:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6645</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPB</port>
+            <time>3/12:35:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPF</port>
+            <time>3/14:00:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6645</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPF</port>
+            <time>3/14:40:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGCC</port>
+            <time>3/15:50:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6648</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGCC</port>
+            <time>3/20:15:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPF</port>
+            <time>3/21:20:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6923</callsign>
+        <required-aircraft>log-dh6</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPF</port>
+            <time>3/09:30:00</time>
+        </departure>
+        <cruise-alt>90</cruise-alt>
+        <arrival>
+            <port>EGPI</port>
+            <time>3/10:15:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6922</callsign>
+        <required-aircraft>log-dh6</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPI</port>
+            <time>3/09:45:00</time>
+        </departure>
+        <cruise-alt>90</cruise-alt>
+        <arrival>
+            <port>EGPF</port>
+            <time>3/10:20:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6647</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPO</port>
+            <time>3/17:00:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPF</port>
+            <time>3/17:55:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6647</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPF</port>
+            <time>3/18:30:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGCC</port>
+            <time>3/19:35:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6642</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGCC</port>
+            <time>3/08:40:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPF</port>
+            <time>3/09:45:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6642</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPF</port>
+            <time>3/10:25:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPB</port>
+            <time>3/11:50:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6641</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPF</port>
+            <time>3/06:45:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGCC</port>
+            <time>3/08:00:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6644</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGCC</port>
+            <time>3/12:05:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPF</port>
+            <time>3/13:10:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6643</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPF</port>
+            <time>3/10:00:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGCC</port>
+            <time>3/11:10:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6808</callsign>
+        <required-aircraft>log-dh6</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPL</port>
+            <time>3/11:40:00</time>
+        </departure>
+        <cruise-alt>90</cruise-alt>
+        <arrival>
+            <port>EGPF</port>
+            <time>3/12:35:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6928</callsign>
+        <required-aircraft>log-dh6</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPI</port>
+            <time>3/18:25:00</time>
+        </departure>
+        <cruise-alt>90</cruise-alt>
+        <arrival>
+            <port>EGPF</port>
+            <time>3/19:00:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6807</callsign>
+        <required-aircraft>log-dh6</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPF</port>
+            <time>3/10:15:00</time>
+        </departure>
+        <cruise-alt>90</cruise-alt>
+        <arrival>
+            <port>EGPL</port>
+            <time>3/11:10:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6809</callsign>
+        <required-aircraft>log-dh6</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPF</port>
+            <time>3/14:30:00</time>
+        </departure>
+        <cruise-alt>90</cruise-alt>
+        <arrival>
+            <port>EGPL</port>
+            <time>3/15:25:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6925</callsign>
+        <required-aircraft>log-dh6</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPF</port>
+            <time>3/12:10:00</time>
+        </departure>
+        <cruise-alt>90</cruise-alt>
+        <arrival>
+            <port>EGPI</port>
+            <time>3/12:50:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6924</callsign>
+        <required-aircraft>log-dh6</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPI</port>
+            <time>3/10:45:00</time>
+        </departure>
+        <cruise-alt>90</cruise-alt>
+        <arrival>
+            <port>EGPF</port>
+            <time>3/11:30:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6927</callsign>
+        <required-aircraft>log-dh6</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPF</port>
+            <time>3/17:10:00</time>
+        </departure>
+        <cruise-alt>90</cruise-alt>
+        <arrival>
+            <port>EGPI</port>
+            <time>3/17:55:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6926</callsign>
+        <required-aircraft>log-dh6</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPI</port>
+            <time>3/13:20:00</time>
+        </departure>
+        <cruise-alt>90</cruise-alt>
+        <arrival>
+            <port>EGPF</port>
+            <time>3/13:55:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6770</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPD</port>
+            <time>3/06:30:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPB</port>
+            <time>3/07:35:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6891</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPH</port>
+            <time>3/09:20:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>3/10:35:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6890</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>3/07:40:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPH</port>
+            <time>3/08:50:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6772</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPD</port>
+            <time>3/09:30:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPB</port>
+            <time>3/10:40:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6892</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>3/11:05:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPH</port>
+            <time>3/12:15:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6771</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPB</port>
+            <time>3/07:40:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPD</port>
+            <time>3/08:40:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6899</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPH</port>
+            <time>3/18:00:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>3/19:15:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6778</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPD</port>
+            <time>3/15:00:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPB</port>
+            <time>3/16:05:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6810</callsign>
+        <required-aircraft>log-dh6</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPL</port>
+            <time>3/16:00:00</time>
+        </departure>
+        <cruise-alt>90</cruise-alt>
+        <arrival>
+            <port>EGPF</port>
+            <time>3/16:55:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6931</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPE</port>
+            <time>3/10:35:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>3/11:20:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6931</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>3/11:40:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPB</port>
+            <time>3/12:20:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6898</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>3/16:10:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPH</port>
+            <time>3/17:20:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6779</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPB</port>
+            <time>3/16:35:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPD</port>
+            <time>3/17:35:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6774</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPD</port>
+            <time>3/13:00:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPB</port>
+            <time>3/14:05:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6773</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPB</port>
+            <time>3/11:10:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPD</port>
+            <time>3/12:10:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6930</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPB</port>
+            <time>3/08:15:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>3/08:55:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6930</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>3/09:15:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPE</port>
+            <time>3/10:00:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6897</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPH</port>
+            <time>3/12:50:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>3/14:05:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6775</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPB</port>
+            <time>3/13:00:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPD</port>
+            <time>3/14:00:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6939</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPE</port>
+            <time>3/17:15:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>3/18:00:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6939</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>3/18:20:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPB</port>
+            <time>3/19:00:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6938</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPB</port>
+            <time>3/15:00:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>3/15:40:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6938</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>3/16:00:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPE</port>
+            <time>3/16:45:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6781</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPB</port>
+            <time>3/19:30:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPD</port>
+            <time>3/20:30:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6780</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPD</port>
+            <time>3/18:30:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPB</port>
+            <time>3/19:35:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_801</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPF</port>
+            <time>3/15:15:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGNX</port>
+            <time>3/16:30:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6822</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPF</port>
+            <time>3/11:05:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPO</port>
+            <time>3/12:10:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6821</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPO</port>
+            <time>3/08:30:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPF</port>
+            <time>3/09:20:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6942</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPO</port>
+            <time>3/09:40:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPH</port>
+            <time>3/10:50:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6823</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPO</port>
+            <time>3/12:40:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPF</port>
+            <time>3/13:40:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6820</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPF</port>
+            <time>3/07:00:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPO</port>
+            <time>3/08:00:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6829</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPO</port>
+            <time>3/19:40:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPF</port>
+            <time>3/20:35:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6826</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPF</port>
+            <time>3/15:30:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPO</port>
+            <time>3/16:30:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6947</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPH</port>
+            <time>3/18:00:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPO</port>
+            <time>3/19:10:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_831</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPO</port>
+            <time>3/14:00:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPE</port>
+            <time>3/14:40:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_830</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPE</port>
+            <time>3/11:00:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPO</port>
+            <time>3/11:40:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_333</callsign>
+        <required-aircraft>LOG_BN_2</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>3/09:40:00</time>
+        </departure>
+        <cruise-alt>50</cruise-alt>
+        <arrival>
+            <port>EGEW</port>
+            <time>3/09:56:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_333</callsign>
+        <required-aircraft>LOG_BN_2</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGEW</port>
+            <time>3/10:01:00</time>
+        </departure>
+        <cruise-alt>50</cruise-alt>
+        <arrival>
+            <port>EGEP</port>
+            <time>3/10:03:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_333</callsign>
+        <required-aircraft>LOG_BN_2</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGEP</port>
+            <time>3/10:08:00</time>
+        </departure>
+        <cruise-alt>50</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>3/10:24:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6832</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPD</port>
+            <time>3/08:55:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>3/09:50:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6956</callsign>
+        <required-aircraft>log-dh6</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPL</port>
+            <time>3/16:05:00</time>
+        </departure>
+        <cruise-alt>90</cruise-alt>
+        <arrival>
+            <port>EGPO</port>
+            <time>3/16:40:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6956</callsign>
+        <required-aircraft>log-dh6</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPO</port>
+            <time>3/17:00:00</time>
+        </departure>
+        <cruise-alt>90</cruise-alt>
+        <arrival>
+            <port>EGPE</port>
+            <time>3/17:40:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_331</callsign>
+        <required-aircraft>LOG_BN_2</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>3/07:35:00</time>
+        </departure>
+        <cruise-alt>50</cruise-alt>
+        <arrival>
+            <port>EGEN</port>
+            <time>3/07:53:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_331</callsign>
+        <required-aircraft>LOG_BN_2</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGEN</port>
+            <time>3/07:58:00</time>
+        </departure>
+        <cruise-alt>50</cruise-alt>
+        <arrival>
+            <port>EGED</port>
+            <time>3/08:06:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_331</callsign>
+        <required-aircraft>LOG_BN_2</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGED</port>
+            <time>3/08:11:00</time>
+        </departure>
+        <cruise-alt>50</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>3/08:22:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6835</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>3/14:40:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPD</port>
+            <time>3/15:30:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6955</callsign>
+        <required-aircraft>log-dh6</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPE</port>
+            <time>3/14:00:00</time>
+        </departure>
+        <cruise-alt>90</cruise-alt>
+        <arrival>
+            <port>EGPO</port>
+            <time>3/14:45:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6955</callsign>
+        <required-aircraft>log-dh6</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPO</port>
+            <time>3/15:05:00</time>
+        </departure>
+        <cruise-alt>90</cruise-alt>
+        <arrival>
+            <port>EGPL</port>
+            <time>3/15:35:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_332</callsign>
+        <required-aircraft>LOG_BN_2</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>3/08:40:00</time>
+        </departure>
+        <cruise-alt>50</cruise-alt>
+        <arrival>
+            <port>EGER</port>
+            <time>3/08:51:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_332</callsign>
+        <required-aircraft>LOG_BN_2</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGER</port>
+            <time>3/08:56:00</time>
+        </departure>
+        <cruise-alt>50</cruise-alt>
+        <arrival>
+            <port>EGES</port>
+            <time>3/09:02:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_332</callsign>
+        <required-aircraft>LOG_BN_2</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGES</port>
+            <time>3/09:07:00</time>
+        </departure>
+        <cruise-alt>50</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>3/09:21:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_420</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>3/11:00:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>3/13:00:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_337</callsign>
+        <required-aircraft>LOG_BN_2</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>3/15:30:00</time>
+        </departure>
+        <cruise-alt>50</cruise-alt>
+        <arrival>
+            <port>EGES</port>
+            <time>3/15:44:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_337</callsign>
+        <required-aircraft>LOG_BN_2</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGES</port>
+            <time>3/15:49:00</time>
+        </departure>
+        <cruise-alt>50</cruise-alt>
+        <arrival>
+            <port>EGER</port>
+            <time>3/15:55:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_337</callsign>
+        <required-aircraft>LOG_BN_2</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGER</port>
+            <time>3/16:00:00</time>
+        </departure>
+        <cruise-alt>50</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>3/16:11:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_338</callsign>
+        <required-aircraft>LOG_BN_2</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>3/16:30:00</time>
+        </departure>
+        <cruise-alt>50</cruise-alt>
+        <arrival>
+            <port>EGEP</port>
+            <time>3/16:46:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_338</callsign>
+        <required-aircraft>LOG_BN_2</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGEP</port>
+            <time>3/16:51:00</time>
+        </departure>
+        <cruise-alt>50</cruise-alt>
+        <arrival>
+            <port>EGEW</port>
+            <time>3/16:53:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_338</callsign>
+        <required-aircraft>LOG_BN_2</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGEW</port>
+            <time>3/16:58:00</time>
+        </departure>
+        <cruise-alt>50</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>3/17:14:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6952</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPO</port>
+            <time>3/08:35:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPE</port>
+            <time>3/09:15:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_335</callsign>
+        <required-aircraft>LOG_BN_2</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>3/13:35:00</time>
+        </departure>
+        <cruise-alt>50</cruise-alt>
+        <arrival>
+            <port>EGEN</port>
+            <time>3/13:54:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_335</callsign>
+        <required-aircraft>LOG_BN_2</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGEN</port>
+            <time>3/13:59:00</time>
+        </departure>
+        <cruise-alt>50</cruise-alt>
+        <arrival>
+            <port>EGEP</port>
+            <time>3/14:09:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_335</callsign>
+        <required-aircraft>LOG_BN_2</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGEP</port>
+            <time>3/14:14:00</time>
+        </departure>
+        <cruise-alt>50</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>3/14:30:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6831</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>3/07:30:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPD</port>
+            <time>3/08:20:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6951</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPE</port>
+            <time>3/07:20:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPO</port>
+            <time>3/08:05:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_336</callsign>
+        <required-aircraft>LOG_BN_2</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>3/14:45:00</time>
+        </departure>
+        <cruise-alt>50</cruise-alt>
+        <arrival>
+            <port>EGED</port>
+            <time>3/14:56:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_336</callsign>
+        <required-aircraft>LOG_BN_2</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGED</port>
+            <time>3/15:01:00</time>
+        </departure>
+        <cruise-alt>50</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>3/15:12:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_339</callsign>
+        <required-aircraft>LOG_BN_2</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>3/17:30:00</time>
+        </departure>
+        <cruise-alt>50</cruise-alt>
+        <arrival>
+            <port>EGEN</port>
+            <time>3/17:48:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_339</callsign>
+        <required-aircraft>LOG_BN_2</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGEN</port>
+            <time>3/17:53:00</time>
+        </departure>
+        <cruise-alt>50</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>3/18:11:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6958</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPO</port>
+            <time>3/19:35:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPE</port>
+            <time>3/20:15:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6837</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>3/17:25:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPD</port>
+            <time>3/18:10:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6957</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPE</port>
+            <time>3/18:20:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPO</port>
+            <time>3/19:05:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6836</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPD</port>
+            <time>3/16:00:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>3/16:55:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6838</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPD</port>
+            <time>3/18:40:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>3/19:30:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6601</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGYC</port>
+            <time>4/07:00:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPH</port>
+            <time>4/08:25:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6641</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPF</port>
+            <time>4/06:45:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGCC</port>
+            <time>4/08:00:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6971</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPE</port>
+            <time>4/06:40:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGCC</port>
+            <time>4/08:00:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6820</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPF</port>
+            <time>4/07:00:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPO</port>
+            <time>4/08:00:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6770</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPD</port>
+            <time>4/06:30:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPB</port>
+            <time>4/07:35:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_6871</callsign>
+        <required-aircraft>LOG-2000</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGYC</port>
+            <time>4/06:50:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGCC</port>
+            <time>4/08:00:00</time>
         </arrival>
         <repeat>WEEK</repeat>
     </flight>

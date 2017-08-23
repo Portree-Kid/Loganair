@@ -180,19 +180,20 @@ public class LoganAirCrawler {
 		}
 		Collections.sort(flights, new DepartureTimeComparator(false));
 		for (Flight f : flights) {
+			System.out.println("Cleaning " + f.getNumber());
 			f.clean();
-			System.out.println(f);
+//			System.out.println(f);
 		}
-
+		
 		for (int i = Calendar.SUNDAY; i <= Calendar.SATURDAY; i++) {
 			for (Flight f : flightLookup[i].values()) {
 				f.clean();
-				System.out.println(f);
-				for (FlightLeg fl : f.getLegs()) {
-					System.out.println("\t" + fl);
-				}
+//				System.out.println(f);
+//				for (FlightLeg fl : f.getLegs()) {
+//					System.out.println("\t" + fl);
+//				}
 			}
-			System.out.println("Dumping " + "flights_" + i + ".bin");
+			System.out.println("Dumping " + flightLookup[i].size() + " to flights_" + i + ".bin" );
 			File flightDatabase = new File("flights_" + i + ".bin");
 			ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(flightDatabase));
 			oos.writeObject(flightLookup[i]);
@@ -218,6 +219,8 @@ public class LoganAirCrawler {
 		airportSize.put("EGYC", 3);
 		airportSize.put("EIDW", 3);
 		airportSize.put("ENBR", 3);
+		airportSize.put("EGNX", 3);
+		
 
 		airportSize.put("EGPI", 2);
 		airportSize.put("EGPR", 2);
@@ -233,6 +236,7 @@ public class LoganAirCrawler {
 		airportSize.put("EGER", 1);
 		airportSize.put("EGES", 1);
 		airportSize.put("EGET", 1);
+		airportSize.put("EGED", 1);
 
 		// airportSize.put(key, value)
 	}
@@ -282,7 +286,7 @@ public class LoganAirCrawler {
 			for (FlightLeg leg : flight.getLegs()) {
 
 				Trafficlist.Flight jaxbFlight = new Trafficlist.Flight();
-				jaxbFlight.setCallsign("Logan_" + flight.getNumber().replaceAll("BE", ""));
+				jaxbFlight.setCallsign("Logan_" + flight.getNumber().replaceAll("[A-Z]", ""));
 				jaxbFlight.setFltrules("VFR");
 				jaxbFlight.setRequiredAircraft(getAircraft(flight));
 				jaxbFlight.setCruiseAlt(getFlightlevel(flight));
