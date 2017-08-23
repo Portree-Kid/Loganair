@@ -192,6 +192,7 @@ public class LoganAirCrawler {
 					System.out.println("\t" + fl);
 				}
 			}
+			System.out.println("Dumping " + "flights_" + i + ".bin");
 			File flightDatabase = new File("flights_" + i + ".bin");
 			ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(flightDatabase));
 			oos.writeObject(flightLookup[i]);
@@ -253,6 +254,7 @@ public class LoganAirCrawler {
 	}
 
 	private static void output() throws JAXBException, IOException, SAXException {
+		System.out.println("Output");
 		ArrayList<Flight> flights = new ArrayList<>();
 		for (int i = Calendar.SUNDAY; i <= Calendar.SATURDAY; i++) {
 			File flightDatabase = new File("flights_" + i + ".bin");
@@ -508,7 +510,10 @@ public class LoganAirCrawler {
 			String airportName = line.item(1).getNodeValue();
 			String icao = icaoLookup.get(airportName);
 			if (icao == null)
+			{
+				System.out.println(" Airport not found "  + airportName );
 				System.exit(55);
+			}
 			if (scannedAirports.get(icao) == null)
 				scannedAirports.put(icao, new Airport(icao, airportName));
 			String timeDate = line.item(2).getNodeValue();
