@@ -9,13 +9,13 @@
     <model>Aircraft/BN-2/BN-2-Loganair.xml</model>
     <livery>LOG</livery>
     <airline>LOG</airline>
-    <home-port>EGET</home-port>
+    <home-port>EGPA</home-port>
     <required-aircraft>LOG_BN_2</required-aircraft>
     <actype></actype>
     <offset>0</offset>
     <radius>8</radius>
     <flighttype>gate</flighttype>
-    <performance-class>turboprop_transport</performance-class>
+    <performance-class>light</performance-class>
     <registration>G-BLDV</registration>
     <heavy>false</heavy>
   </aircraft>
@@ -23,13 +23,13 @@
     <model>Aircraft/BN-2/BN-2-Loganair.xml</model>
     <livery>LOG</livery>
     <airline>LOG</airline>
-    <home-port>EGET</home-port>
+    <home-port>EGPA</home-port>
     <required-aircraft>LOG_BN_2</required-aircraft>
     <actype></actype>
     <offset>0</offset>
     <radius>8</radius>
     <flighttype>gate</flighttype>
-    <performance-class>turboprop_transport</performance-class>
+    <performance-class>light</performance-class>
     <registration>G-BPCA</registration>
     <heavy>false</heavy>
   </aircraft>
@@ -113,7 +113,7 @@
     <offset>1</offset>
     <radius>12</radius>
     <flighttype>gate</flighttype>
-    <performance-class>jet_transport</performance-class>
+    <performance-class>turboprop_transport</performance-class>
     <registration>G-LGNA</registration>
     <heavy>false</heavy>
   </aircraft>
@@ -127,7 +127,7 @@
     <offset>1</offset>
     <radius>12</radius>
     <flighttype>gate</flighttype>
-    <performance-class>jet_transport</performance-class>
+    <performance-class>turboprop_transport</performance-class>
     <registration>G-LGNB</registration>
     <heavy>false</heavy>
   </aircraft>
@@ -141,7 +141,7 @@
     <offset>1</offset>
     <radius>12</radius>
     <flighttype>gate</flighttype>
-    <performance-class>jet_transport</performance-class>
+    <performance-class>turboprop_transport</performance-class>
     <registration>G-LGNC</registration>
     <heavy>false</heavy>
   </aircraft>
@@ -155,7 +155,7 @@
     <offset>1</offset>
     <radius>12</radius>
     <flighttype>gate</flighttype>
-    <performance-class>jet_transport</performance-class>
+    <performance-class>turboprop_transport</performance-class>
     <registration>G-LGND</registration>
     <heavy>false</heavy>
   </aircraft>
@@ -169,7 +169,7 @@
     <offset>1</offset>
     <radius>12</radius>
     <flighttype>gate</flighttype>
-    <performance-class>jet_transport</performance-class>
+    <performance-class>turboprop_transport</performance-class>
     <registration>G-LGNE</registration>
     <heavy>false</heavy>
   </aircraft>
@@ -183,7 +183,7 @@
     <offset>1</offset>
     <radius>12</radius>
     <flighttype>gate</flighttype>
-    <performance-class>jet_transport</performance-class>
+    <performance-class>turboprop_transport</performance-class>
     <registration>G-LGNF</registration>
     <heavy>false</heavy>
   </aircraft>
@@ -197,7 +197,7 @@
     <offset>1</offset>
     <radius>12</radius>
     <flighttype>gate</flighttype>
-    <performance-class>jet_transport</performance-class>
+    <performance-class>turboprop_transport</performance-class>
     <registration>G-LGNG</registration>
     <heavy>false</heavy>
   </aircraft>
@@ -211,7 +211,7 @@
     <offset>1</offset>
     <radius>12</radius>
     <flighttype>gate</flighttype>
-    <performance-class>jet_transport</performance-class>
+    <performance-class>turboprop_transport</performance-class>
     <registration>G-LGNH</registration>
     <heavy>false</heavy>
   </aircraft>
@@ -225,7 +225,7 @@
     <offset>1</offset>
     <radius>12</radius>
     <flighttype>gate</flighttype>
-    <performance-class>jet_transport</performance-class>
+    <performance-class>turboprop_transport</performance-class>
     <registration>G-LGNI</registration>
     <heavy>false</heavy>
   </aircraft>
@@ -239,7 +239,7 @@
     <offset>1</offset>
     <radius>12</radius>
     <flighttype>gate</flighttype>
-    <performance-class>jet_transport</performance-class>
+    <performance-class>turboprop_transport</performance-class>
     <registration>G-LGNJ</registration>
     <heavy>false</heavy>
   </aircraft>
@@ -253,7 +253,7 @@
     <offset>1</offset>
     <radius>12</radius>
     <flighttype>gate</flighttype>
-    <performance-class>jet_transport</performance-class>
+    <performance-class>turboprop_transport</performance-class>
     <registration>G-LGNK</registration>
     <heavy>false</heavy>
   </aircraft>
@@ -267,7 +267,7 @@
     <offset>1</offset>
     <radius>12</radius>
     <flighttype>gate</flighttype>
-    <performance-class>jet_transport</performance-class>
+    <performance-class>turboprop_transport</performance-class>
     <registration>G-LGNL</registration>
     <heavy>false</heavy>
   </aircraft>
@@ -281,7 +281,7 @@
     <offset>12</offset>
     <radius>12</radius>
     <flighttype>gate</flighttype>
-    <performance-class>jet_transport</performance-class>
+    <performance-class>turboprop_transport</performance-class>
     <registration>G-BVVK</registration>
     <heavy>false</heavy>
   </aircraft>
@@ -295,7 +295,7 @@
     <offset>12</offset>
     <radius>12</radius>
     <flighttype>gate</flighttype>
-    <performance-class>jet_transport</performance-class>
+    <performance-class>turboprop_transport</performance-class>
     <registration>G-HIAL</registration>
     <heavy>false</heavy>
   </aircraft>
@@ -309,7 +309,7 @@
     <offset>1</offset>
     <radius>12</radius>
     <flighttype>gate</flighttype>
-    <performance-class>jet_transport</performance-class>
+    <performance-class>turboprop_transport</performance-class>
     <registration>G-SGTS</registration>
     <heavy>false</heavy>
   </aircraft>

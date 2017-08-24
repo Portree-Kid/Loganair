@@ -73,22 +73,6 @@ import de.keithpaterson.loganair.jaxb.Trafficlist.Flight.Departure;
 
 public class LoganAirCrawler {
 
-	private static final class DepartureTimeComparator implements Comparator<Flight> {
-
-		private boolean reverse;
-
-		public DepartureTimeComparator(boolean r) {
-			reverse = r;
-		}
-
-		public int compare(Flight o1, Flight o2) {
-			if (reverse)
-				return o2.getDepartureTime().compareTo(o1.getDepartureTime());
-			else
-				return o1.getDepartureTime().compareTo(o2.getDepartureTime());
-		}
-	}
-
 	private static final int ARRIVAL = 0;
 	private static final int DEPARTURE = 1;
 	static HashMap<String, Airport> scannedAirports = new HashMap<String, Airport>();
@@ -176,9 +160,8 @@ public class LoganAirCrawler {
 		ArrayList<Flight> flights = new ArrayList<Flight>();
 		for (int i = Calendar.SUNDAY; i <= Calendar.SATURDAY; i++) {
 			flights.addAll(flightLookup[i].values());
-
 		}
-		Collections.sort(flights, new DepartureTimeComparator(false));
+		Collections.sort(flights, new DepartureTimeComparator());
 		for (Flight f : flights) {
 			System.out.println("Cleaning " + f.getNumber());
 			f.clean();
@@ -193,6 +176,9 @@ public class LoganAirCrawler {
 //					System.out.println("\t" + fl);
 //				}
 			}
+			ArrayList<Flight> dayFlights = new ArrayList<>();
+			dayFlights.addAll(flightLookup[i].values());
+			buildChains(dayFlights);
 			System.out.println("Dumping " + flightLookup[i].size() + " to flights_" + i + ".bin" );
 			File flightDatabase = new File("flights_" + i + ".bin");
 			ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(flightDatabase));
@@ -206,7 +192,7 @@ public class LoganAirCrawler {
 
 	private static void initAirportSize() {
 		airportSize = new HashMap<String, Integer>();
-		// Big ones
+		// Big ones (340 & 2000)
 		airportSize.put("EGPA", 3);
 		airportSize.put("EGPB", 3);
 		airportSize.put("EGPC", 3);
@@ -222,17 +208,19 @@ public class LoganAirCrawler {
 		airportSize.put("EGNX", 3);
 		airportSize.put("EGSS", 3);
 		airportSize.put("EGPN", 3);
+		airportSize.put("EGPL", 3); // Benbecula
+		airportSize.put("EGJJ", 3); // Jersey
+		airportSize.put("EGNS", 3); // Isle of Man
 				
 		
 
+		//Medium with Otters
 		airportSize.put("EGPI", 2);
 		airportSize.put("EGPR", 2);
 		airportSize.put("EGPU", 2);
 		airportSize.put("EGEC", 2);
-		airportSize.put("EGNS", 2);
-		airportSize.put("EGPL", 2);
-		airportSize.put("EGJJ", 2);
 
+		// Wee ones with Islander
 		airportSize.put("EGEP", 1);
 		airportSize.put("EGEW", 1);
 		airportSize.put("EGEN", 1);
@@ -283,7 +271,16 @@ public class LoganAirCrawler {
 	private static void output(ArrayList<Flight> flights) throws JAXBException, IOException, SAXException {
 		System.out.println("Dumping " + flights.size() + " flights");
 		Trafficlist t = new Trafficlist();
-		t.getAircraft().addAll(aircraftLookup.values());
+		ArrayList<Aircraft> planes = new ArrayList<>();
+		planes.addAll(aircraftLookup.values());
+		Collections.sort(planes, new Comparator<Aircraft>() {
+
+			@Override
+			public int compare(Aircraft o1, Aircraft o2) {
+				return o1.getRegistration().compareTo(o2.getRegistration());
+			}
+		});
+		t.getAircraft().addAll(planes);
 		for (Flight flight : flights) {
 			DateFormat tf = DateFormat.getTimeInstance();
 			for (FlightLeg leg : flight.getLegs()) {
@@ -371,7 +368,8 @@ public class LoganAirCrawler {
 	 */
 
 	private static ArrayList<RoundTrip> buildChains(ArrayList<Flight> flights) {
-		System.out.println("Building Chains");
+		System.out.println("Building Chains for " + flights.size() + " Flights");
+		Collections.sort(flights, new DepartureTimeComparator());
 		ArrayList<RoundTrip> ret = new ArrayList<RoundTrip>();
 		HashMap<String, Airport> bases = new HashMap<String, Airport>();
 		for (int i = 0; i < flights.size(); i++) {
@@ -383,11 +381,14 @@ public class LoganAirCrawler {
 		}
 		ArrayList<RoundTrip> rings = new ArrayList<RoundTrip>();
 		for (RoundTrip rt : ret) {
+			// Remove everything that isn't actually a ring
 			if (rt.getFlights().get(0).getFrom().equals(rt.getFlights().get(rt.getFlights().size() - 1).getTo())) {
 				rings.add(rt);
 			}
 		}
-		return ret;
+		rings.sort(new RingSorter());
+		
+		return rings;
 	}
 
 	private static Collection<? extends RoundTrip> buildChains(RoundTrip rt, List<Flight> flights) {
@@ -441,7 +442,7 @@ public class LoganAirCrawler {
 			}
 			if (bases.containsKey(flight.getTo())
 					&& !bases.get(flight.getTo()).getLastLegs().containsKey(flight.getFrom())) {
-				bases.get(flight.getTo()).increaseBasedAircraft();
+				bases.get(flight.getTo()).increaseBasedAircraft(getFlightAircraftSize(flight));
 				bases.get(flight.getTo()).getLastLegs().put(flight.getFrom(), flight);
 			}
 		}
