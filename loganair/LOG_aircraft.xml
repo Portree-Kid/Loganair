@@ -278,7 +278,7 @@
     <home-port>EGPF</home-port>
     <required-aircraft>log-dh6</required-aircraft>
     <actype>DHC6</actype>
-    <offset>1</offset>
+    <offset>12</offset>
     <radius>12</radius>
     <flighttype>gate</flighttype>
     <performance-class>jet_transport</performance-class>
@@ -292,7 +292,7 @@
     <home-port>EGPF</home-port>
     <required-aircraft>log-dh6</required-aircraft>
     <actype>DHC6</actype>
-    <offset>1</offset>
+    <offset>12</offset>
     <radius>12</radius>
     <flighttype>gate</flighttype>
     <performance-class>jet_transport</performance-class>
