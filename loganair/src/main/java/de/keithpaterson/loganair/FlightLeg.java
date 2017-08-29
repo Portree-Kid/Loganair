@@ -46,8 +46,10 @@ public class FlightLeg  implements Serializable {
 	public void setDepartureTime(String timeDate) throws ParseException {
 		// System.out.println(df.format(new Date()));
 		Date newTime = df.parse(timeDate.split(" ")[0] + ":00");
-		if( arrivalTime != null && newTime.after(arrivalTime))
+		if( arrivalTime != null && newTime.after(arrivalTime) && departureTime == null)
 			throw new IllegalArgumentException("Departure after arrival");
+		if( arrivalTime != null && newTime.after(arrivalTime))
+			System.out.println("Flight changed time");
 		departureTime = newTime;
 	}
 
