@@ -11,8 +11,12 @@ import java.util.Comparator;
 import java.util.Date;
 import java.util.Locale;
 
-public class Flight implements Serializable {
+public class Flight implements Serializable, Cloneable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -6581528388425648911L;
 	private Date arrivalTime;
 	private Date departureTime;
 	private DateFormat df = DateFormat.getTimeInstance();
@@ -161,6 +165,32 @@ public class Flight implements Serializable {
 
 	public int getDay() {
 		return day;
+	}
+
+	public Flight copy() {
+		Flight ret = new Flight(number);
+		ret.setArrivalTime(getArrivalTime());
+		ret.setDepartureTime(getDepartureTime());
+		ret.setTo(to);
+		ret.setFrom(from);
+		ret.setLegs(getLegs());
+		return ret;
+	}
+
+	public void setFrom(String from) {
+		this.from = from;
+	}
+
+	public void setLegs(ArrayList<FlightLeg> legs) {
+		this.legs = legs;
+	}
+
+	public void setTo(String to) {
+		this.to = to;
+	}
+
+	public void setDay(int day) {
+		this.day = day;
 	}
 
 }

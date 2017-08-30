@@ -25,6 +25,7 @@ import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.List;
 import java.util.Locale;
+import java.util.Map.Entry;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -83,7 +84,7 @@ public class LoganAirCrawler {
 	private static HashMap<String, String> icaoLookup = new HashMap<>();
 	private static Hashtable<String, Aircraft> aircraftLookup = new Hashtable<>();
 	private static HashMap<String, Integer> airportSize;
-	
+
 	static Logger log = Logger.getLogger(LoganAirCrawler.class.getName());
 
 	public static void main(String[] args)
@@ -114,7 +115,7 @@ public class LoganAirCrawler {
 		icaoFileLookup.load(new FileReader("airports.txt"));
 		icaoFileLookup.forEach((k, v) -> {
 			k = ((String) k).toUpperCase();
-			log.log( Level.INFO, k.toString());
+			log.log(Level.INFO, k.toString());
 			icaoLookup.put(k.toString().trim(), v.toString());
 		});
 
@@ -168,23 +169,23 @@ public class LoganAirCrawler {
 		}
 		Collections.sort(flights, new DepartureTimeComparator());
 		for (Flight f : flights) {
-			log.log( Level.INFO, "Cleaning " + f.getNumber());
+			log.log(Level.INFO, "Cleaning " + f.getNumber());
 			f.clean();
-//			log.log( Level.INFO, f);
+			// log.log( Level.INFO, f);
 		}
-		
+
 		for (int i = Calendar.SUNDAY; i <= Calendar.SATURDAY; i++) {
 			for (Flight f : flightLookup[i].values()) {
 				f.clean();
-//				log.log( Level.INFO, f);
-//				for (FlightLeg fl : f.getLegs()) {
-//					log.log( Level.INFO, "\t" + fl);
-//				}
+				// log.log( Level.INFO, f);
+				// for (FlightLeg fl : f.getLegs()) {
+				// log.log( Level.INFO, "\t" + fl);
+				// }
 			}
 			ArrayList<Flight> dayFlights = new ArrayList<>();
 			dayFlights.addAll(flightLookup[i].values());
 			buildChains(dayFlights);
-			log.log( Level.INFO, "Dumping " + flightLookup[i].size() + " to flights_" + i + ".bin" );
+			log.log(Level.INFO, "Dumping " + flightLookup[i].size() + " to flights_" + i + ".bin");
 			File flightDatabase = new File("flights_" + i + ".bin");
 			ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(flightDatabase));
 			oos.writeObject(flightLookup[i]);
@@ -192,7 +193,26 @@ public class LoganAirCrawler {
 		}
 		// buildChains(flights);
 		getBases(flights);
-		output();
+		// fillGaps(flights);
+		output(flightLookup, "LOG.xml");
+		fillGaps(flights);
+		output(flightLookup, "LOG_Big.xml");
+	}
+
+	private static void fillGaps(ArrayList<Flight> flights) {
+		HashMap<String, FlightSchedule> plan = new HashMap<>();
+		for (Flight flight : flights) {
+			if (plan.get(flight.getNumber()) == null)
+				plan.put(flight.getNumber(), new FlightSchedule());
+			plan.get(flight.getNumber()).setDay(flight);
+		}
+		for (Entry<String, FlightSchedule> flight : plan.entrySet()) {
+			ArrayList<Flight> synth = flight.getValue().synth();
+			System.out.println(flight.getKey() + "\t" + synth.size());
+			for (Flight flight2 : synth) {
+				flightLookup[flight2.getDay()].put(flight2.getNumber(), flight2);
+			}
+		}
 	}
 
 	private static void initAirportSize() {
@@ -216,10 +236,8 @@ public class LoganAirCrawler {
 		airportSize.put("EGPL", 3); // Benbecula
 		airportSize.put("EGJJ", 3); // Jersey
 		airportSize.put("EGNS", 3); // Isle of Man
-				
-		
 
-		//Medium with Otters
+		// Medium with Otters
 		airportSize.put("EGPI", 2);
 		airportSize.put("EGPR", 2);
 		airportSize.put("EGPU", 2);
@@ -253,28 +271,50 @@ public class LoganAirCrawler {
 		fw.close();
 	}
 
-	private static void output() throws JAXBException, IOException, SAXException {
-		log.log( Level.INFO, "Output");
+	private static void output(HashMap<String, Flight>[] flightLookup2, String filename)
+			throws JAXBException, IOException, SAXException {
+		log.log(Level.INFO, "Output");
 		ArrayList<Flight> flights = new ArrayList<>();
+		Calendar cal = Calendar.getInstance();
 		for (int i = Calendar.SUNDAY; i <= Calendar.SATURDAY; i++) {
-			File flightDatabase = new File("flights_" + i + ".bin");
-			if (flightDatabase.exists()) {
-				try {
-					ObjectInputStream ois = new ObjectInputStream(new FileInputStream(flightDatabase));
-					HashMap daySchedule = (HashMap) ois.readObject();
-					flights.addAll(daySchedule.values());
-					ois.close();
-				} catch (Exception e) {
-					e.printStackTrace();
-					flightDatabase.delete();
-				}
-			}
+			HashMap<String, Flight> daySchedule = flightLookup2[i];
+			cal.set(Calendar.DAY_OF_WEEK, i);
+			log.log(Level.INFO,
+					" -- Day " + i + " -- "
+							+ cal.getDisplayName(Calendar.DAY_OF_WEEK, Calendar.LONG, Locale.getDefault()) + " -- "
+							+ daySchedule.size());
+			flights.addAll(daySchedule.values());
+
+			// File flightDatabase = new File("flights_" + i + ".bin");
+			// if (flightDatabase.exists()) {
+			// try {
+			// ObjectInputStream ois = new ObjectInputStream(new
+			// FileInputStream(flightDatabase));
+			// HashMap daySchedule = (HashMap) ois.readObject();
+			// flights.addAll(daySchedule.values());
+			// ois.close();
+			// } catch (Exception e) {
+			// e.printStackTrace();
+			// flightDatabase.delete();
+			// }
+			// }
 		}
-		output(flights);
+		output(flights, filename);
 	}
 
-	private static void output(ArrayList<Flight> flights) throws JAXBException, IOException, SAXException {
-		log.log( Level.INFO, "Dumping " + flights.size() + " flights");
+	private static void output(ArrayList<Flight> flights, String filename)
+			throws JAXBException, IOException, SAXException {
+		log.log(Level.INFO, "Dumping " + flights.size() + " flights");
+
+		Collections.sort(flights, new Comparator<Flight>() {
+
+			@Override
+			public int compare(Flight o1, Flight o2) {
+				if (o1.getDay() != o2.getDay())
+					return Integer.compare(o1.getDay(), o2.getDay());
+				return o1.getDepartureTime().compareTo(o2.getDepartureTime());
+			}
+		});
 		Trafficlist t = new Trafficlist();
 		ArrayList<Aircraft> planes = new ArrayList<>();
 		planes.addAll(aircraftLookup.values());
@@ -315,7 +355,7 @@ public class LoganAirCrawler {
 		m.setSchema(schema);
 		m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 
-		FileWriter fw = new FileWriter(new File("LOG.xml"));
+		FileWriter fw = new FileWriter(new File(filename));
 		m.marshal(t, fw);
 
 		fw.close();
@@ -335,14 +375,15 @@ public class LoganAirCrawler {
 		}
 		return "UNKNOWN";
 	}
-	
+
 	/**
 	 * Guess the size of plane.
+	 * 
 	 * @param flight
 	 * @return
 	 */
 
-	private static int getFlightAircraftSize(Flight flight) {		
+	private static int getFlightAircraftSize(Flight flight) {
 		int size = Math.min(airportSize.get(flight.getTo()), airportSize.get(flight.getFrom()));
 		for (FlightLeg leg : flight.getLegs()) {
 			size = Math.min(size, airportSize.get(leg.getFrom()));
@@ -373,7 +414,7 @@ public class LoganAirCrawler {
 	 */
 
 	private static ArrayList<RoundTrip> buildChains(ArrayList<Flight> flights) {
-		log.log( Level.INFO, "Building Chains for " + flights.size() + " Flights");
+		log.log(Level.INFO, "Building Chains for " + flights.size() + " Flights");
 		Collections.sort(flights, new DepartureTimeComparator());
 		ArrayList<RoundTrip> ret = new ArrayList<RoundTrip>();
 		HashMap<String, Airport> bases = new HashMap<String, Airport>();
@@ -392,7 +433,7 @@ public class LoganAirCrawler {
 			}
 		}
 		rings.sort(new RingSorter());
-		
+
 		return rings;
 	}
 
@@ -432,7 +473,8 @@ public class LoganAirCrawler {
 			legArray[i] = new HashMap<String, Flight>();
 		}
 
-		// We go forward and if we find a "FROM" then we have a base and will not accept the "TO"
+		// We go forward and if we find a "FROM" then we have a base and will
+		// not accept the "TO"
 		// We end up with a good approx then
 		for (Flight flight : flights) {
 			int index = flight.getDay() - 1;
@@ -455,13 +497,14 @@ public class LoganAirCrawler {
 		for (int i = 0; i < baseArray.length; i++) {
 
 			cal.set(Calendar.DAY_OF_WEEK, i);
-			log.log( Level.INFO, " -- Day " + i + " -- " + cal.getDisplayName(Calendar.DAY_OF_WEEK, Calendar.LONG, Locale.getDefault()) + " -- " );
+			log.log(Level.INFO, " -- Day " + i + " -- "
+					+ cal.getDisplayName(Calendar.DAY_OF_WEEK, Calendar.LONG, Locale.getDefault()) + " -- ");
 			int allAircraft = 0;
 			for (Airport a : baseArray[i].values()) {
-				log.log( Level.INFO, a.toString());
+				log.log(Level.INFO, a.toString());
 				allAircraft += a.getBasedAircraft();
 			}
-			log.log( Level.INFO, "Number of Aircraft : " + allAircraft);
+			log.log(Level.INFO, "Number of Aircraft : " + allAircraft);
 		}
 
 	}
@@ -517,7 +560,7 @@ public class LoganAirCrawler {
 			int day = cal.get(Calendar.DAY_OF_WEEK);
 
 			String flightNumber = line.item(0).getNodeValue();
-			log.log( Level.INFO, flightNumber);
+			log.log(Level.INFO, flightNumber);
 			Flight flight = flightLookup[day].get(flightNumber);
 			if (flight == null) {
 				flight = new Flight(flightNumber);
@@ -525,9 +568,8 @@ public class LoganAirCrawler {
 			}
 			String airportName = line.item(1).getNodeValue();
 			String icao = icaoLookup.get(airportName);
-			if (icao == null)
-			{
-				log.log( Level.INFO, " Airport not found "  + airportName );
+			if (icao == null) {
+				log.log(Level.INFO, " Airport not found " + airportName);
 				System.exit(55);
 			}
 			if (scannedAirports.get(icao) == null)
@@ -544,9 +586,9 @@ public class LoganAirCrawler {
 			default:
 				break;
 			}
-			log.log( Level.INFO, timeDate);
+			log.log(Level.INFO, timeDate);
 			Node status = line.item(3);
-			log.log( Level.INFO, status.getNodeValue());
+			log.log(Level.INFO, status.getNodeValue());
 		}
 
 		// log.log( Level.INFO, responseString);
