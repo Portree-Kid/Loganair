@@ -86,6 +86,7 @@ public class LoganAirCrawler {
 	private static HashMap<String, Integer> airportSize;
 
 	static Logger log = Logger.getLogger(LoganAirCrawler.class.getName());
+	private static Hashtable<String, ArrayList<Aircraft>> aircraftTypes = new Hashtable<>();
 
 	public static void main(String[] args)
 			throws UnirestException, ClientProtocolException, IOException, URISyntaxException, XPathExpressionException,
@@ -236,6 +237,7 @@ public class LoganAirCrawler {
 		airportSize.put("EGPL", 3); // Benbecula
 		airportSize.put("EGJJ", 3); // Jersey
 		airportSize.put("EGNS", 3); // Isle of Man
+		airportSize.put("EBBR", 3);
 
 		// Medium with Otters
 		airportSize.put("EGPI", 2);
@@ -250,6 +252,7 @@ public class LoganAirCrawler {
 		airportSize.put("EGER", 1);
 		airportSize.put("EGES", 1);
 		airportSize.put("EGET", 1);
+		airportSize.put("EGEF", 1);
 		airportSize.put("EGED", 1);
 
 		// airportSize.put(key, value)
@@ -266,6 +269,12 @@ public class LoganAirCrawler {
 		Trafficlist t = (Trafficlist) m.unmarshal(fw);
 		for (Aircraft a : t.getAircraft()) {
 			aircraftLookup.put(a.getRegistration(), a);
+			ArrayList<Aircraft> list = aircraftTypes.get(a.getRequiredAircraft());
+			if(list == null){
+				list = new ArrayList<>();
+				aircraftTypes.put(a.getRequiredAircraft(), list);
+			}
+			list.add(a);
 		}
 
 		fw.close();
@@ -365,15 +374,37 @@ public class LoganAirCrawler {
 	private static String getAircraft(Flight flight) {
 		int size = getFlightAircraftSize(flight);
 
-		switch (size) {
-		case 1:
-			return "LOG_BN_2";
-		case 2:
-			return "log-dh6";
-		case 3:
-			return "LOG-2000";
+		String type = null;
+		for (int i = size; i > 0; i--) {
+			switch (i) {
+			case 1:
+				type =  "LOG_BN_2";
+			case 2:
+				type =   "log-dh6";
+			case 3:
+				type =   "LOG-2000,log-340";
+			}
+			String aircraft = getAircraft(flight, type);
+			if( aircraft != null )
+				return aircraft;
 		}
+		log.warning("No Aircraft for " + flight.getFrom() + " -> " + flight.getTo());
 		return "UNKNOWN";
+	}
+
+	private static String getAircraft(Flight flight, String types) {
+		String[] type = types.split(",");
+		for (int i = 0; i < type.length; i++) {
+			String fromAircraft = type[i] + "-" + flight.getFrom();
+			String toAircraft = type[i] + "-" + flight.getTo();
+			ArrayList<Aircraft> tlist = aircraftTypes.get(fromAircraft);
+			ArrayList<Aircraft> flist = aircraftTypes.get(toAircraft);
+			if( tlist!= null )
+				return fromAircraft;
+			if(flist != null )
+				return toAircraft;			
+		}
+		return null;
 	}
 
 	/**
