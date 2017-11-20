@@ -38,7 +38,7 @@
     <livery>LOG</livery>
     <airline>LOG</airline>
     <home-port>EGPN</home-port>
-    <required-aircraft>LOG-2000</required-aircraft>
+    <required-aircraft>LOG-2000-EGPN</required-aircraft>
     <actype>S20</actype>
     <offset>0</offset>
     <radius>14</radius>
@@ -52,7 +52,7 @@
     <livery>LOG</livery>
     <airline>LOG</airline>
     <home-port>EGPN</home-port>
-    <required-aircraft>LOG-2000</required-aircraft>
+    <required-aircraft>LOG-2000-EGPN</required-aircraft>
     <actype>S20</actype>
     <offset>0</offset>
     <radius>14</radius>
@@ -65,8 +65,8 @@
     <model>Aircraft/Saab-2000/Saab-2000-Loganair.xml</model>
     <livery>LOG</livery>
     <airline>LOG</airline>
-    <home-port>EGPA</home-port>
-    <required-aircraft>LOG-2000</required-aircraft>
+    <home-port>EGPO</home-port>
+    <required-aircraft>LOG-2000-EGPO</required-aircraft>
     <actype>S20</actype>
     <offset>0</offset>
     <radius>14</radius>
@@ -80,7 +80,7 @@
     <livery>LOG</livery>
     <airline>LOG</airline>
     <home-port>EGPA</home-port>
-    <required-aircraft>LOG-2000</required-aircraft>
+    <required-aircraft>LOG-2000-EGPA</required-aircraft>
     <actype>S20</actype>
     <offset>0</offset>
     <radius>14</radius>
@@ -94,7 +94,7 @@
     <livery>LOG</livery>
     <airline>LOG</airline>
     <home-port>EGPA</home-port>
-    <required-aircraft>LOG-2000</required-aircraft>
+    <required-aircraft>LOG-2000-EGPA</required-aircraft>
     <actype>S20</actype>
     <offset>0</offset>
     <radius>14</radius>
@@ -104,11 +104,11 @@
     <heavy>false</heavy>
   </aircraft>
   <aircraft>
-    <model>Aircraft/saab-340/LOGAN-Saab-340.xml</model>
+    <model>Aircraft/saab-340/Loganair-Saab-340.xml</model>
     <livery>LOG</livery>
     <airline>LOG</airline>
-    <home-port>EGPD</home-port>
-    <required-aircraft>log-340</required-aircraft>
+    <home-port>EGPH</home-port>
+    <required-aircraft>log-340-EGPH</required-aircraft>
     <actype>Saab-340B</actype>
     <offset>1</offset>
     <radius>12</radius>
@@ -118,11 +118,11 @@
     <heavy>false</heavy>
   </aircraft>
   <aircraft>
-    <model>Aircraft/saab-340/LOGAN-Saab-340.xml</model>
+    <model>Aircraft/saab-340/Loganair-Saab-340.xml</model>
     <livery>LOG</livery>
     <airline>LOG</airline>
     <home-port>EGPD</home-port>
-    <required-aircraft>log-340</required-aircraft>
+    <required-aircraft>log-340-EGPD</required-aircraft>
     <actype>Saab-340B</actype>
     <offset>1</offset>
     <radius>12</radius>
@@ -132,11 +132,11 @@
     <heavy>false</heavy>
   </aircraft>
   <aircraft>
-    <model>Aircraft/saab-340/LOGAN-Saab-340.xml</model>
+    <model>Aircraft/saab-340/Loganair-Saab-340.xml</model>
     <livery>LOG</livery>
     <airline>LOG</airline>
     <home-port>EGPD</home-port>
-    <required-aircraft>log-340</required-aircraft>
+    <required-aircraft>log-340-EGPD</required-aircraft>
     <actype>Saab-340B</actype>
     <offset>1</offset>
     <radius>12</radius>
@@ -146,11 +146,11 @@
     <heavy>false</heavy>
   </aircraft>
   <aircraft>
-    <model>Aircraft/saab-340/LOGAN-Saab-340.xml</model>
+    <model>Aircraft/saab-340/Loganair-Saab-340.xml</model>
     <livery>LOG</livery>
     <airline>LOG</airline>
     <home-port>EGPE</home-port>
-    <required-aircraft>log-340</required-aircraft>
+    <required-aircraft>log-340-EGPE</required-aircraft>
     <actype>Saab-340B</actype>
     <offset>1</offset>
     <radius>12</radius>
@@ -160,11 +160,11 @@
     <heavy>false</heavy>
   </aircraft>
   <aircraft>
-    <model>Aircraft/saab-340/LOGAN-Saab-340.xml</model>
+    <model>Aircraft/saab-340/Loganair-Saab-340.xml</model>
     <livery>LOG</livery>
     <airline>LOG</airline>
     <home-port>EGPE</home-port>
-    <required-aircraft>log-340</required-aircraft>
+    <required-aircraft>log-340-EGPE</required-aircraft>
     <actype>Saab-340B</actype>
     <offset>1</offset>
     <radius>12</radius>
@@ -174,11 +174,11 @@
     <heavy>false</heavy>
   </aircraft>
   <aircraft>
-    <model>Aircraft/saab-340/LOGAN-Saab-340.xml</model>
+    <model>Aircraft/saab-340/Loganair-Saab-340.xml</model>
     <livery>LOG</livery>
     <airline>LOG</airline>
     <home-port>EGPE</home-port>
-    <required-aircraft>log-340</required-aircraft>
+    <required-aircraft>log-340-EGPE</required-aircraft>
     <actype>Saab-340B</actype>
     <offset>1</offset>
     <radius>12</radius>
@@ -188,11 +188,11 @@
     <heavy>false</heavy>
   </aircraft>
   <aircraft>
-    <model>Aircraft/saab-340/LOGAN-Saab-340.xml</model>
+    <model>Aircraft/saab-340/Loganair-Saab-340.xml</model>
     <livery>LOG</livery>
     <airline>LOG</airline>
     <home-port>EGYC</home-port>
-    <required-aircraft>log-340</required-aircraft>
+    <required-aircraft>log-340-EGYC</required-aircraft>
     <actype>Saab-340B</actype>
     <offset>1</offset>
     <radius>12</radius>
@@ -202,11 +202,11 @@
     <heavy>false</heavy>
   </aircraft>
   <aircraft>
-    <model>Aircraft/saab-340/LOGAN-Saab-340.xml</model>
+    <model>Aircraft/saab-340/Loganair-Saab-340.xml</model>
     <livery>LOG</livery>
     <airline>LOG</airline>
     <home-port>EGYC</home-port>
-    <required-aircraft>log-340</required-aircraft>
+    <required-aircraft>log-340-EGYC</required-aircraft>
     <actype>Saab-340B</actype>
     <offset>1</offset>
     <radius>12</radius>
@@ -216,11 +216,11 @@
     <heavy>false</heavy>
   </aircraft>
   <aircraft>
-    <model>Aircraft/saab-340/LOGAN-Saab-340.xml</model>
+    <model>Aircraft/saab-340/Loganair-Saab-340.xml</model>
     <livery>LOG</livery>
     <airline>LOG</airline>
     <home-port>EGPF</home-port>
-    <required-aircraft>log-340</required-aircraft>
+    <required-aircraft>log-340-EGPF</required-aircraft>
     <actype>Saab-340B</actype>
     <offset>1</offset>
     <radius>12</radius>
@@ -230,11 +230,11 @@
     <heavy>false</heavy>
   </aircraft>
   <aircraft>
-    <model>Aircraft/saab-340/LOGAN-Saab-340.xml</model>
+    <model>Aircraft/saab-340/Loganair-Saab-340.xml</model>
     <livery>LOG</livery>
     <airline>LOG</airline>
-    <home-port>EGPF</home-port>
-    <required-aircraft>log-340</required-aircraft>
+    <home-port>EGCC</home-port>
+    <required-aircraft>log-340-EGCC</required-aircraft>
     <actype>Saab-340B</actype>
     <offset>1</offset>
     <radius>12</radius>
@@ -244,11 +244,11 @@
     <heavy>false</heavy>
   </aircraft>
   <aircraft>
-    <model>Aircraft/saab-340/LOGAN-Saab-340.xml</model>
+    <model>Aircraft/saab-340/Loganair-Saab-340.xml</model>
     <livery>LOG</livery>
     <airline>LOG</airline>
-    <home-port>EGPF</home-port>
-    <required-aircraft>LOG-340</required-aircraft>
+    <home-port>EGCC</home-port>
+    <required-aircraft>LOG-340-EGCC</required-aircraft>
     <actype>Saab-340B</actype>
     <offset>1</offset>
     <radius>12</radius>
@@ -258,11 +258,11 @@
     <heavy>false</heavy>
   </aircraft>
   <aircraft>
-    <model>Aircraft/saab-340/LOGAN-Saab-340.xml</model>
+    <model>Aircraft/saab-340/Loganair-Saab-340.xml</model>
     <livery>LOG</livery>
     <airline>LOG</airline>
-    <home-port>EGPF</home-port>
-    <required-aircraft>log-340</required-aircraft>
+    <home-port>EGPE</home-port>
+    <required-aircraft>log-340-EGPE</required-aircraft>
     <actype>Saab-340B</actype>
     <offset>1</offset>
     <radius>12</radius>
@@ -276,9 +276,9 @@
     <livery>LOG</livery>
     <airline>LOG</airline>
     <home-port>EGPF</home-port>
-    <required-aircraft>log-dh6</required-aircraft>
+    <required-aircraft>log-dh6-EGPF</required-aircraft>
     <actype>DHC6</actype>
-    <offset>12</offset>
+    <offset>0</offset>
     <radius>12</radius>
     <flighttype>gate</flighttype>
     <performance-class>turboprop_transport</performance-class>
@@ -290,9 +290,9 @@
     <livery>LOG</livery>
     <airline>LOG</airline>
     <home-port>EGPF</home-port>
-    <required-aircraft>log-dh6</required-aircraft>
+    <required-aircraft>log-dh6-EGPF</required-aircraft>
     <actype>DHC6</actype>
-    <offset>12</offset>
+    <offset>0</offset>
     <radius>12</radius>
     <flighttype>gate</flighttype>
     <performance-class>turboprop_transport</performance-class>
@@ -304,9 +304,9 @@
     <livery>LOG</livery>
     <airline>LOG</airline>
     <home-port>EGPF</home-port>
-    <required-aircraft>log-dh6</required-aircraft>
+    <required-aircraft>log-dh6-EGPF</required-aircraft>
     <actype>DHC6</actype>
-    <offset>12</offset>
+    <offset>0</offset>
     <radius>12</radius>
     <flighttype>gate</flighttype>
     <performance-class>turboprop_transport</performance-class>
