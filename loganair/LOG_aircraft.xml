@@ -10,7 +10,7 @@
     <livery>LOG</livery>
     <airline>LOG</airline>
     <home-port>EGPA</home-port>
-    <required-aircraft>LOG_BN_2</required-aircraft>
+    <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
     <actype></actype>
     <offset>0</offset>
     <radius>8</radius>
@@ -24,7 +24,7 @@
     <livery>LOG</livery>
     <airline>LOG</airline>
     <home-port>EGPA</home-port>
-    <required-aircraft>LOG_BN_2</required-aircraft>
+    <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
     <actype></actype>
     <offset>0</offset>
     <radius>8</radius>

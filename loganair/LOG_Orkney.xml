@@ -15,7 +15,7 @@ Eday=EGED
  -->
     <flight>
         <callsign>Logan_700</callsign>
-        <required-aircraft>LOG-2000</required-aircraft>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
             <port>EGPA</port>
@@ -30,7 +30,7 @@ Eday=EGED
     </flight>
     <flight>
         <callsign>Logan_700</callsign>
-        <required-aircraft>LOG-2000</required-aircraft>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
             <port>EGEN</port>
@@ -45,7 +45,7 @@ Eday=EGED
     </flight>
     <flight>
         <callsign>Logan_700</callsign>
-        <required-aircraft>LOG-2000</required-aircraft>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
             <port>EGED</port>
@@ -60,7 +60,7 @@ Eday=EGED
     </flight>
     <flight>
         <callsign>Logan_702</callsign>
-        <required-aircraft>LOG-2000</required-aircraft>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
             <port>EGPA</port>
@@ -75,7 +75,7 @@ Eday=EGED
     </flight>
     <flight>
         <callsign>Logan_702</callsign>
-        <required-aircraft>LOG-2000</required-aircraft>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
             <port>EGEW</port>
@@ -90,7 +90,7 @@ Eday=EGED
     </flight>
     <flight>
         <callsign>Logan_702</callsign>
-        <required-aircraft>LOG-2000</required-aircraft>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
             <port>EGEP</port>
@@ -105,7 +105,7 @@ Eday=EGED
     </flight>
     <flight>
         <callsign>Logan_703</callsign>
-        <required-aircraft>LOG-2000</required-aircraft>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
             <port>EGPA</port>
@@ -120,7 +120,7 @@ Eday=EGED
     </flight>
     <flight>
         <callsign>Logan_703</callsign>
-        <required-aircraft>LOG-2000</required-aircraft>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
             <port>EGER</port>
@@ -135,7 +135,7 @@ Eday=EGED
     </flight>
     <flight>
         <callsign>Logan_703</callsign>
-        <required-aircraft>LOG-2000</required-aircraft>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
             <port>EGES</port>
@@ -150,7 +150,7 @@ Eday=EGED
     </flight>
     <flight>
         <callsign>Logan_704</callsign>
-        <required-aircraft>LOG-2000</required-aircraft>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
             <port>EGPA</port>
@@ -165,7 +165,7 @@ Eday=EGED
     </flight>
     <flight>
         <callsign>Logan_704</callsign>
-        <required-aircraft>LOG-2000</required-aircraft>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
             <port>EGEN</port>
@@ -180,7 +180,7 @@ Eday=EGED
     </flight>
     <flight>
         <callsign>Logan_704</callsign>
-        <required-aircraft>LOG-2000</required-aircraft>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
             <port>EGEP</port>
@@ -195,7 +195,7 @@ Eday=EGED
     </flight>
     <flight>
         <callsign>Logan_705</callsign>
-        <required-aircraft>LOG-2000</required-aircraft>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
             <port>EGPA</port>
@@ -210,7 +210,7 @@ Eday=EGED
     </flight>
     <flight>
         <callsign>Logan_705</callsign>
-        <required-aircraft>LOG-2000</required-aircraft>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
             <port>EGEP</port>
@@ -225,7 +225,7 @@ Eday=EGED
     </flight>
     <flight>
         <callsign>Logan_705</callsign>
-        <required-aircraft>LOG-2000</required-aircraft>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
         <fltrules>VFR</fltrules>
         <departure>
             <port>EGEW</port>
@@ -235,6 +235,741 @@ Eday=EGED
         <arrival>
             <port>EGPA</port>
             <time>1/15:44:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_706</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>1/15:10:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGES</port>
+            <time>1/15:24:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_706</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGES</port>
+            <time>1/15:29:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGER</port>
+            <time>1/15:35:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_706</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGER</port>
+            <time>1/15:40:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>1/15:51:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_707</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>1/17:00:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGEN</port>
+            <time>1/17:18:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_707</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGEN</port>
+            <time>1/17:23:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>1/17:41:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_701</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>2/07:35:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGEN</port>
+            <time>2/07:53:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_701</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGEN</port>
+            <time>2/07:58:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>2/08:16:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_708</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>2/08:25:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGES</port>
+            <time>2/08:39:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_708</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGES</port>
+            <time>2/08:44:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGER</port>
+            <time>2/08:50:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_708</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGER</port>
+            <time>2/08:50:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>2/08:55:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_709</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>2/08:35:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGEW</port>
+            <time>2/08:51:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_709</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGEW</port>
+            <time>2/08:56:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGEP</port>
+            <time>2/08:58:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_709</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGEP</port>
+            <time>2/09:03:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>2/09:19:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_705</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>2/15:00:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGEP</port>
+            <time>2/15:16:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_705</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGEP</port>
+            <time>2/15:21:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGEW</port>
+            <time>2/15:23:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_705</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGEW</port>
+            <time>2/15:28:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>2/15:44:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_710</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>2/15:10:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGER</port>
+            <time>2/15:21:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_710</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGER</port>
+            <time>2/15:26:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGES</port>
+            <time>2/15:32:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_710</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGES</port>
+            <time>2/15:37:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>2/15:51:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_707</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>2/17:00:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGEN</port>
+            <time>2/17:18:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_707</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGEN</port>
+            <time>2/17:23:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>2/17:41:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_701</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>3/07:35:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGEN</port>
+            <time>2/07:53:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_701</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGEN</port>
+            <time>3/07:58:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>2/08:16:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_711</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>3/08:25:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGER</port>
+            <time>3/08:36:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_711</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGER</port>
+            <time>3/08:41:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGES</port>
+            <time>3/08:47:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_711</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGES</port>
+            <time>3/08:52:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>3/09:06:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_709</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>3/08:35:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGEW</port>
+            <time>3/08:51:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_709</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGEW</port>
+            <time>3/08:56:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGEP</port>
+            <time>3/08:58:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_709</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGEP</port>
+            <time>3/09:03:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>3/09:19:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_712</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGEW</port>
+            <time>3/09:20:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGED</port>
+            <time>3/09:31:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_712</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGED</port>
+            <time>3/09:36:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>3/09:47:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_714</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGEW</port>
+            <time>3/14:25:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGED</port>
+            <time>3/14:36:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_714</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGED</port>
+            <time>3/14:41:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>3/14:52:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_705</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>3/15:00:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGEP</port>
+            <time>3/15:16:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_705</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGEP</port>
+            <time>3/15:21:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGEW</port>
+            <time>3/15:23:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_705</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGEW</port>
+            <time>3/15:28:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>3/15:44:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_706</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>3/15:10:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGES</port>
+            <time>3/15:24:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_706</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGES</port>
+            <time>3/15:29:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGER</port>
+            <time>3/15:35:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_706</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGER</port>
+            <time>3/15:40:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>3/15:51:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_707</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>3/17:00:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGEN</port>
+            <time>3/17:18:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_707</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGEN</port>
+            <time>3/17:23:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>3/17:41:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_701</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>4/07:35:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGEN</port>
+            <time>4/07:53:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_701</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGEN</port>
+            <time>4/07:58:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>4/08:16:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_708</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>4/08:25:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGES</port>
+            <time>4/08:39:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_708</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGES</port>
+            <time>4/08:44:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGER</port>
+            <time>4/08:50:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_708</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGER</port>
+            <time>4/08:50:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>4/08:55:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_709</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGPA</port>
+            <time>4/08:35:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGEW</port>
+            <time>4/08:51:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_709</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGEW</port>
+            <time>4/08:56:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGEP</port>
+            <time>4/08:58:00</time>
+        </arrival>
+        <repeat>WEEK</repeat>
+    </flight>
+    <flight>
+        <callsign>Logan_709</callsign>
+        <required-aircraft>LOG_BN_2_EGPA</required-aircraft>
+        <fltrules>VFR</fltrules>
+        <departure>
+            <port>EGEP</port>
+            <time>4/09:03:00</time>
+        </departure>
+        <cruise-alt>10</cruise-alt>
+        <arrival>
+            <port>EGPA</port>
+            <time>4/09:19:00</time>
         </arrival>
         <repeat>WEEK</repeat>
     </flight>
