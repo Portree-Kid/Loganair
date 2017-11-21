@@ -1,3 +1,6 @@
+Liege=EBLG
+Sumburgh=EGPB
+Teesside=EGNV
 Belfast=EGAA
 Enniskillen=EGAB
 Belfast=EGAC
