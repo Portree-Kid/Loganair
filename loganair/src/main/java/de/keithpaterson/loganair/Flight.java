@@ -127,7 +127,7 @@ public class Flight implements Serializable, Cloneable {
 		if (depTime != null) {
 			Calendar cal = Calendar.getInstance();
 			String date = depTime.split(" ")[1] + " " + cal.get(Calendar.YEAR);
-			SimpleDateFormat f = new SimpleDateFormat("dd-MMM yyyy");
+			SimpleDateFormat f = new SimpleDateFormat("dd-MMM yyyy",  Locale.ENGLISH);
 			cal.setTime(f.parse(date));
 			day = cal.get(Calendar.DAY_OF_WEEK);
 		}
