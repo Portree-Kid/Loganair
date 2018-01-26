@@ -28,6 +28,7 @@ public class Flight implements Serializable, Cloneable {
 
 	private String to;
 	private int day;
+	private transient RoundTrip roundTrip;
 
 	public Flight(String flightNumber) {
 		number = flightNumber;
@@ -126,7 +127,7 @@ public class Flight implements Serializable, Cloneable {
 		}
 		if (depTime != null) {
 			Calendar cal = Calendar.getInstance();
-			String date = depTime.split(" ")[1] + " " + cal.get(Calendar.YEAR);
+			String date = depTime.split("[ ]+")[1] + " " + cal.get(Calendar.YEAR);
 			SimpleDateFormat f = new SimpleDateFormat("dd-MMM yyyy",  Locale.ENGLISH);
 			cal.setTime(f.parse(date));
 			day = cal.get(Calendar.DAY_OF_WEEK);
@@ -191,6 +192,16 @@ public class Flight implements Serializable, Cloneable {
 
 	public void setDay(int day) {
 		this.day = day;
+	}
+
+	public void setRoundTrip(RoundTrip roundTrip) {
+		if( this.roundTrip != null && !this.roundTrip.equals(roundTrip))
+			throw new IllegalStateException("Flight already claimed");
+		this.roundTrip = roundTrip;
+	}
+
+	public RoundTrip getRoundTrip() {
+		return roundTrip;
 	}
 
 }
