@@ -1,3 +1,7 @@
+Warsaw=EPWA
+Aalborgs=EKYT
+De\u0020Kooy=EHKD
+Den\u0020Helder=EHKD
 Liege=EBLG
 Sumburgh=EGPB
 Teesside=EGNV
