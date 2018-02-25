@@ -29,6 +29,7 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Properties;
+import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
@@ -75,7 +76,7 @@ import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
 import com.mashape.unirest.http.exceptions.UnirestException;
-import com.sun.tools.ws.processor.util.IndentingWriter;
+import com.sun.xml.txw2.output.IndentingXMLStreamWriter;
 
 import de.keithpaterson.loganair.jaxb.Trafficlist;
 import de.keithpaterson.loganair.jaxb.Trafficlist.Aircraft;
@@ -200,6 +201,8 @@ public class LoganAirCrawler {
 		// fillGaps(flights);
 		loadOrkney();
 		output(flightLookup, "LOG.xml");
+		POIDumper.dump(flights);
+
 
 		fillGaps(flights);
 		output(flightLookup, "LOG_Big.xml");
@@ -218,7 +221,7 @@ public class LoganAirCrawler {
 				} catch (Exception e) {
 					e.printStackTrace();
 					flightLookup[i] = new HashMap<String, Flight>();
-					flightDatabase.delete();
+					flightDatabase.renameTo(new File(flightDatabase.getParentFile(), "flights_" + i + "_bak.bin"));
 				}
 			} else {
 				flightLookup[i] = new HashMap<String, Flight>();
@@ -236,7 +239,7 @@ public class LoganAirCrawler {
 		}
 		for (Entry<String, FlightSchedule> flight : plan.entrySet()) {
 			ArrayList<Flight> synth = flight.getValue().synth();
-			System.out.println(flight.getKey() + "\t" + synth.size());
+			log.info(flight.getKey() + "\t" + synth.size());
 			for (Flight flight2 : synth) {
 				flightLookup[flight2.getDay()].put(flight2.getNumber(), flight2);
 			}
@@ -373,6 +376,7 @@ public class LoganAirCrawler {
 	 * @throws XMLStreamException
 	 */
 
+	@SuppressWarnings("restriction")
 	private static void output(ArrayList<Flight> flights, String filename)
 			throws JAXBException, IOException, SAXException, XMLStreamException {
 		log.log(Level.INFO, "Dumping " + flights.size() + " flights");
@@ -435,10 +439,9 @@ public class LoganAirCrawler {
 		m.setSchema(schema);
 		m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 
-		m.marshal(t, new com.sun.xml.internal.txw2.output.IndentingXMLStreamWriter(xsw));
+		m.marshal(t, new IndentingXMLStreamWriter(xsw));
 
 		fw.close();
-		POIDumper.dump(flights);
 	}
 
 	/**
@@ -542,6 +545,7 @@ public class LoganAirCrawler {
 			RoundTrip rt = new RoundTrip();
 			// The start
 			rt.getFlights().add(flight);
+			// Recursive search into future
 			ret.addAll(buildChains(rt, culledList.subList(i, culledList.size())));
 		}
 		ArrayList<RoundTrip> rings = new ArrayList<RoundTrip>();
@@ -552,20 +556,32 @@ public class LoganAirCrawler {
 			}
 		}
 		rings.sort(new RingSorter());
-
+//		ArrayList<RoundTrip> cleanedRings = new ArrayList<>();
+//		cleanedRings.addAll(cleanChains(rings));
+//		rings = cleanedRings;
+		int i = 0;
 		for (Iterator iterator = rings.iterator(); iterator.hasNext();) {
 			RoundTrip roundTrip = (RoundTrip) iterator.next();
 			roundTrip.claimFlights();
+			roundTrip.setId(i++);
 		}
 		return rings;
 	}
+	
+	/**
+	 * 
+	 * @param rt
+	 * @param flights
+	 * @return
+	 */
 
 	protected static Collection<? extends RoundTrip> buildChains(RoundTrip rt, List<Flight> flights) {
 		ArrayList<RoundTrip> ret = new ArrayList<RoundTrip>();
 		Flight lastFlight = rt.getFlights().get(rt.getFlights().size() - 1);
 		for (int i = 0; i < flights.size(); i++) {
 			Flight flight = flights.get(i);
-			if (flight.getFrom().equals(lastFlight.getTo())) {
+			if (flight.getFrom().equals(lastFlight.getTo()) 
+					&& flight.getDay() == lastFlight.getDay()) {
 				RoundTrip rt2 = new RoundTrip();
 				rt2.getFlights().addAll(rt.getFlights());
 				rt2.getFlights().add(flight);
@@ -631,6 +647,21 @@ public class LoganAirCrawler {
 		}
 
 	}
+	
+	/**
+	 * Downloads an airport departure/arrival table.
+	 * @param url
+	 * @param build
+	 * @param airport
+	 * @param dir
+	 * @throws URISyntaxException
+	 * @throws UnsupportedEncodingException
+	 * @throws IOException
+	 * @throws ClientProtocolException
+	 * @throws HttpResponseException
+	 * @throws XPathExpressionException
+	 * @throws ParseException
+	 */
 
 	private static void getAirport(URIBuilder url, CloseableHttpClient build, Airport airport, int dir)
 			throws URISyntaxException, UnsupportedEncodingException, IOException, ClientProtocolException,
@@ -718,5 +749,32 @@ public class LoganAirCrawler {
 		}
 
 		// log.log( Level.INFO, responseString);
+	}
+
+	private static Collection<? extends RoundTrip> cleanChains(Collection<? extends RoundTrip> chains) {
+		HashMap<Flight, String> starts = new HashMap<>();
+		HashMap<Flight, String> ends = new HashMap<>();
+		HashMap<Flight, String> middles = new HashMap<>();
+		for (Iterator iterator = chains.iterator(); iterator.hasNext();) {
+			RoundTrip roundTrip = (RoundTrip) iterator.next();
+			starts.put(roundTrip.flights.get(0), "");
+			ends.put(roundTrip.flights.get(roundTrip.flights.size() - 1), "");
+		}
+		for (Iterator iterator = chains.iterator(); iterator.hasNext();) {
+			RoundTrip roundTrip = (RoundTrip) iterator.next();
+			if (roundTrip.flights.size() > 2) {
+				for (int i = 1; i < roundTrip.flights.size() - 1; i++) {
+					middles.put(roundTrip.flights.get(i), "");
+				}
+			}
+		}
+		// Cull uncomplete flights
+		Set<? extends RoundTrip> culledList = chains.stream()
+		  .filter(p -> !middles.containsKey(p.flights.get(0)) && !middles.containsKey(p.flights.get(p.flights.size()-1)))
+		  .collect(Collectors.toSet());			
+		
+		
+	
+		return culledList;
 	}
 }

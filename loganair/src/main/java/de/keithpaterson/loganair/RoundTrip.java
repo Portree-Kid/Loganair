@@ -3,10 +3,21 @@ package de.keithpaterson.loganair;
 import java.util.ArrayList;
 import java.util.Collections;
 
+/**
+ * Class that binds a series of flights together for a day
+ * @author keith.paterson
+ *
+ */
+
 public class RoundTrip {
 
 	ArrayList<Flight> flights = new ArrayList<Flight>();
 	private String aircraft;
+	private int id;
+
+	public int getId() {
+		return id;
+	}
 
 	public ArrayList<Flight> getFlights() {
 		return flights;
@@ -15,7 +26,7 @@ public class RoundTrip {
 	@Override
 	public String toString() {
 		Collections.sort(flights, new DepartureTimeComparator());
-		return String.format("%20s -> %20s", flights.get(0), flights.get(flights.size() - 1));
+		return String.format("%d %20s -> %20s", id, flights.get(0), flights.get(flights.size() - 1));
 	}
 	
 	@Override
@@ -47,5 +58,9 @@ public class RoundTrip {
 
 	public void setAircraft(String aircraft) {
 		this.aircraft = aircraft;
+	}
+
+	public void setId(int i) {
+		id = i;
 	}
 }

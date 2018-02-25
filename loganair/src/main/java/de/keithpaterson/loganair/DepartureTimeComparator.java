@@ -17,6 +17,8 @@ final class DepartureTimeComparator implements Comparator<Flight> {
 		if (reverse) {
 			if (o1.getDay() != o2.getDay())
 				return Integer.compare(o2.getDay(), o1.getDay());
+			if (o1.getDepartureTime() == o2.getDepartureTime())
+				return 0;
 			if (o2.getDepartureTime() == null)
 				return -1;
 			if (o1.getDepartureTime() == null)
@@ -25,6 +27,8 @@ final class DepartureTimeComparator implements Comparator<Flight> {
 		} else {
 			if (o1.getDay() != o2.getDay())
 				return Integer.compare(o1.getDay(), o2.getDay());
+			if (o1.getDepartureTime() == o2.getDepartureTime())
+				return 0;
 			if (o1.getDepartureTime() == null)
 				return -1;
 			if (o2.getDepartureTime() == null)

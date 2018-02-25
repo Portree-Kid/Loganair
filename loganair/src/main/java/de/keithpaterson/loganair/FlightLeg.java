@@ -6,12 +6,14 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.logging.Logger;
 
 public class FlightLeg  implements Serializable {
 	private String from;
 	private Date arrivalTime;
 	private String to;
 	private Date departureTime;
+	static Logger log = Logger.getLogger(FlightLeg.class.getName());
 
 	DateFormat df = DateFormat.getTimeInstance();
 
@@ -37,7 +39,7 @@ public class FlightLeg  implements Serializable {
 		if( departureTime != null && newTime.before(departureTime)  && arrivalTime == null)
 			throw new IllegalArgumentException("Arrival before departure");
 		if( departureTime != null && newTime.before(departureTime))
-			System.out.println("Flightleg changed time");
+			log.warning("Flightleg arrival changed time from " + df.format(arrivalTime) + " " + timeDate);
 		arrivalTime = df.parse(timeDate.split(" ")[0] + ":00");
 	}
 
@@ -51,7 +53,7 @@ public class FlightLeg  implements Serializable {
 		if( arrivalTime != null && newTime.after(arrivalTime) && departureTime == null)
 			throw new IllegalArgumentException("Departure after arrival");
 		if( arrivalTime != null && newTime.after(arrivalTime))
-			System.out.println("Flightleg changed time");
+			log.warning("Flightleg departure changed time from " + df.format(arrivalTime) + " " + timeDate);
 		departureTime = newTime;
 	}
 
