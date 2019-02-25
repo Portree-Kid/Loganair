@@ -163,6 +163,11 @@ public class Flight implements Serializable, Cloneable {
 		this.from = legs.get(0).getFrom();
 		this.to = legs.get(legs.size() - 1).getTo();
 	}
+	
+	/**
+	 * SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, and SATURDAY
+	 * @return
+	 */
 
 	public int getDay() {
 		return day;
@@ -202,6 +207,10 @@ public class Flight implements Serializable, Cloneable {
 
 	public RoundTrip getRoundTrip() {
 		return roundTrip;
+	}
+
+	public long getWeight() {
+		return arrivalTime.getTime() - departureTime.getTime();
 	}
 
 }

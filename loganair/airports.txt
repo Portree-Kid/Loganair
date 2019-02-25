@@ -262,3 +262,5 @@ Falkland\u0020Islands=EGYP
 Dublin=EIDW
 Bergen=ENBR
 Brussels=EBBR
+Donegal=EIDL
+Groningen=EHGG

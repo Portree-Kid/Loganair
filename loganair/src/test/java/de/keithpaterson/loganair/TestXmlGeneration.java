@@ -1,4 +1,4 @@
-package loganair;
+package de.keithpaterson.loganair;
 
 import java.io.StringWriter;
 

@@ -1,4 +1,4 @@
-package loganair;
+package de.keithpaterson.loganair;
 
 import static org.junit.Assert.*;
 
@@ -69,6 +69,4 @@ public class FlightTest {
 		assertEquals("CC",flight.getTo());
 		assertTrue(flight.getDepartureTime().before(flight.getArrivalTime()));
 	}
-	
-	
 }
