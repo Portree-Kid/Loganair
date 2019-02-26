@@ -1,5 +1,6 @@
 package de.keithpaterson.loganair;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -58,10 +59,12 @@ public class POIDumper {
 
 		try {
 			SimpleDateFormat fileSdf = new SimpleDateFormat("yyyMMddhhmmss");
-			String fName = "out/loganair" + fileSdf.format(new Date()) + ".xls";
+			String fName = "loganair" + fileSdf.format(new Date()) + ".xls";
 			log.info("Writing to " + fName);
+			File f = new File("out");
+			f.mkdirs();
 			// Write the output to a file
-			FileOutputStream fileOut = new FileOutputStream(fName);
+			FileOutputStream fileOut = new FileOutputStream(new File( f, fName) );
 			wb.write(fileOut);
 			fileOut.close();
 		} catch (FileNotFoundException e) {
