@@ -284,6 +284,7 @@ public class LoganAirCrawler {
 		airportSize.put("EKYT", 3); // Tees
 		airportSize.put("EGAC", 3); // Belfast
 		airportSize.put("EIDL", 3); // Donegal
+		airportSize.put("EGAE", 3); // Londonderry/Derry
 		
 
 		// Medium with Otters
