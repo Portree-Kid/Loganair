@@ -52,13 +52,13 @@ public class LoganairFinderJob {
 	@Autowired
 	private JobLauncher jobLauncher;
 
-	@Scheduled(cron = "0 0 */2 * * ?")
+	@Scheduled(cron = "0 0 */1 * * ?")
 	public void crawl() throws Exception {
-		System.out.println(" Job Started at :" + new Date());
+		logger.info(" Job Started at :" + new Date());
 		JobParameters param = new JobParametersBuilder().addString("JobID", String.valueOf(System.currentTimeMillis()))
 				.toJobParameters();
 		JobExecution execution = jobLauncher.run(taskletJob(), param);
-		System.out.println("Job finished with status :" + execution.getStatus());
+		logger.info("Job finished with status :" + execution.getStatus());
 	}
 
 	/**

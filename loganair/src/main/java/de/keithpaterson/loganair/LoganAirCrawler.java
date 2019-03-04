@@ -759,7 +759,7 @@ public class LoganAirCrawler {
 			String icao = icaoLookup.get(airportName);
 			if (icao == null) {
 				log.log(Level.SEVERE, " Airport not found " + airportName);
-				System.exit(55);
+				//System.exit(55);
 			}
 			if (scannedAirports.get(icao) == null)
 				scannedAirports.put(icao, new Airport(icao, airportName));

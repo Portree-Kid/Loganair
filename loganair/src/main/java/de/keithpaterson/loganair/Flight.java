@@ -9,7 +9,9 @@ import java.util.Calendar;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Date;
+import java.util.List;
 import java.util.Locale;
+import java.util.stream.Collectors;
 
 public class Flight implements Serializable, Cloneable {
 
@@ -22,7 +24,7 @@ public class Flight implements Serializable, Cloneable {
 	private DateFormat df = DateFormat.getTimeInstance();
 	private String from;
 
-	ArrayList<FlightLeg> legs = new ArrayList<FlightLeg>();
+	List<FlightLeg> legs = new ArrayList<FlightLeg>();
 	
 	private String number;
 
@@ -35,10 +37,13 @@ public class Flight implements Serializable, Cloneable {
 	}
 
 	public void clean() {
+		legs = legs.stream()
+				.filter(p -> p.getFrom() != null && p.getTo() != null)
+				.collect(Collectors.toList());
 		legs = clean(legs);
 	}
 
-	private ArrayList<FlightLeg> clean(ArrayList<FlightLeg> legs2) {
+	private ArrayList<FlightLeg> clean(List<FlightLeg> legs2) {
 		ArrayList<FlightLeg> ret = new ArrayList<FlightLeg>();
 		FlightLeg lastLeg = null;
 		for (FlightLeg flightLeg : legs2) {
@@ -62,7 +67,7 @@ public class Flight implements Serializable, Cloneable {
 		return from;
 	}
 
-	public ArrayList<FlightLeg> getLegs() {
+	public List<FlightLeg> getLegs() {
 		return legs;
 	}
 
@@ -114,7 +119,10 @@ public class Flight implements Serializable, Cloneable {
 	public void updateLeg(String depTime, String from, String arrTime, String to) throws ParseException {
 		FlightLeg leg = null;
 		for (FlightLeg flightLeg : legs) {
-			if (flightLeg.getFrom().equals(from) && flightLeg.getTo().equals(to)) {
+			if (flightLeg.getFrom() != null &&
+					flightLeg.getFrom().equals(from) &&
+					flightLeg.getTo() != null &&
+					flightLeg.getTo().equals(to)) {
 				leg = flightLeg;
 				break;
 			}
@@ -187,8 +195,8 @@ public class Flight implements Serializable, Cloneable {
 		this.from = from;
 	}
 
-	public void setLegs(ArrayList<FlightLeg> legs) {
-		this.legs = legs;
+	public void setLegs(List<FlightLeg> list) {
+		this.legs = list;
 	}
 
 	public void setTo(String to) {

@@ -264,3 +264,7 @@ Bergen=ENBR
 Brussels=EBBR
 Donegal=EIDL
 Groningen=EHGG
+Oslo=ENGM
+Esbjerg=EKEB
+TOULOUSE=LFBO
+HAWARDEN=EGNR
