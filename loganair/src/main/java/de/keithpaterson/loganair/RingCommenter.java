@@ -3,6 +3,8 @@ package de.keithpaterson.loganair;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javax.xml.bind.Marshaller.Listener;
 import javax.xml.stream.XMLStreamException;
@@ -16,6 +18,7 @@ public class RingCommenter extends Listener {
 
 	private XMLStreamWriter xsw;
 	private HashMap<de.keithpaterson.loganair.jaxb.Trafficlist.Flight, Flight> lookup;
+	static Logger log = Logger.getLogger(RingCommenter.class.getName());
 
 	public RingCommenter(XMLStreamWriter xsw,
 			HashMap<de.keithpaterson.loganair.jaxb.Trafficlist.Flight, Flight> serializedLookup) {
@@ -25,11 +28,12 @@ public class RingCommenter extends Listener {
 		this.lookup = serializedLookup;
 	}
 
-	public void setEscape(){
+	public void setEscape() {
 		try {
 			Method m = this.xsw.getClass().getDeclaredMethod("setEscapeCharacters", boolean.class);
 			m.invoke(xsw, true);
-		} catch (NoSuchMethodException | SecurityException | IllegalAccessException | IllegalArgumentException | InvocationTargetException e) {
+		} catch (NoSuchMethodException | SecurityException | IllegalAccessException | IllegalArgumentException
+				| InvocationTargetException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
@@ -45,19 +49,20 @@ public class RingCommenter extends Listener {
 			} else if (source instanceof Trafficlist.Aircraft) {
 				xsw.writeCharacters("\n");
 				xsw.writeComment("Aircraft");
-			} else if( source instanceof Departure ) {				
+			} else if (source instanceof Departure) {
 				xsw.writeCharacters("\n");
-				xsw.writeComment(((Departure)source).getPort() + "-" + LoganAirCrawler.icaoReverseLookup.get(((Departure)source).getPort()));
-			} else if( source instanceof Arrival) {				
+				xsw.writeComment(((Departure) source).getPort() + "-"
+						+ LoganAirCrawler.icaoReverseLookup.get(((Departure) source).getPort()));
+			} else if (source instanceof Arrival) {
 				xsw.writeCharacters("\n");
-				xsw.writeComment(((Arrival)source).getPort() + "-" + LoganAirCrawler.icaoReverseLookup.get(((Arrival)source).getPort()));
-			}
-			 else {
-				System.out.println(source.getClass().getName());
+				xsw.writeComment(((Arrival) source).getPort() + "-"
+						+ LoganAirCrawler.icaoReverseLookup.get(((Arrival) source).getPort()));
+			} else if (source instanceof Trafficlist) {
+			} else {
+				log.warning("Can't comment " + source.getClass().getName());
 			}
 		} catch (XMLStreamException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			log.log(Level.WARNING, e.getMessage(), e);
 		}
 		super.beforeMarshal(source);
 	}

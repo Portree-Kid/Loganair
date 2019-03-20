@@ -95,6 +95,7 @@ public class LoganAirCrawler {
 	public static HashMap<String, String> icaoReverseLookup = new HashMap<>();
 	private static Hashtable<String, Aircraft> aircraftLookup = new Hashtable<>();
 	private static HashMap<String, Integer> airportSize;
+	private static HashMap<String, Integer> unsizedAirportSize = new HashMap<>();
 
 	static Logger log = Logger.getLogger(LoganAirCrawler.class.getName());
 	private static Hashtable<String, ArrayList<Aircraft>> aircraftTypes = new Hashtable<>();
@@ -213,7 +214,6 @@ public class LoganAirCrawler {
 		output(flightLookup, "LOG.xml");
 		POIDumper.dump(flights);
 
-
 		fillGaps(flights);
 		output(flightLookup, "LOG_Big.xml");
 	}
@@ -285,7 +285,10 @@ public class LoganAirCrawler {
 		airportSize.put("EGAC", 3); // Belfast
 		airportSize.put("EIDL", 3); // Donegal
 		airportSize.put("EGAE", 3); // Londonderry/Derry
-		
+		airportSize.put("EKEB", 3); // Esbjerg
+		airportSize.put("ENGM", 3); // Oslo
+		airportSize.put("LFBO", 3); // Toulouse
+		airportSize.put("EGGD", 3); // Bristol
 
 		// Medium with Otters
 		airportSize.put("EGPI", 2);
@@ -522,8 +525,11 @@ public class LoganAirCrawler {
 
 	private static int getAirportSize(String icao) {
 		if (!airportSize.containsKey(icao)) {
-			log.warning(icao + " not in size list");
-			return 1;
+			if (!unsizedAirportSize.containsKey(icao)) {
+				unsizedAirportSize.put(icao, 1);
+				log.warning(icao + " not in size list");
+			}
+			return 3;
 		}
 		return airportSize.get(icao);
 	}
@@ -583,7 +589,7 @@ public class LoganAirCrawler {
 		}
 		return rings;
 	}
-	
+
 	private static ArrayList<RoundTrip> clean(ArrayList<RoundTrip> rings) {
 		ArrayList<RoundTrip> ret = new ArrayList<RoundTrip>();
 		for (RoundTrip rt : rings) {
@@ -608,8 +614,7 @@ public class LoganAirCrawler {
 		Flight lastFlight = rt.getFlights().get(rt.getFlights().size() - 1);
 		for (int i = 0; i < flights.size(); i++) {
 			Flight flight = flights.get(i);
-			if (flight.getFrom().equals(lastFlight.getTo()) 
-					&& flight.getDay() == lastFlight.getDay()) {
+			if (flight.getFrom().equals(lastFlight.getTo()) && flight.getDay() == lastFlight.getDay()) {
 				RoundTrip rt2 = new RoundTrip();
 				rt2.getFlights().addAll(rt.getFlights());
 				rt2.getFlights().add(flight);
@@ -618,7 +623,7 @@ public class LoganAirCrawler {
 				ret.addAll(chains);
 			}
 		}
-		
+
 		return ret;
 	}
 
@@ -676,9 +681,10 @@ public class LoganAirCrawler {
 		}
 
 	}
-	
+
 	/**
 	 * Downloads an airport departure/arrival table.
+	 * 
 	 * @param url
 	 * @param build
 	 * @param airport
@@ -745,9 +751,8 @@ public class LoganAirCrawler {
 
 			String flightNumber = line.item(0).getNodeValue();
 			log.log(Level.INFO, flightNumber);
-			if (!flightNumber.startsWith("LM") && !flightNumber.startsWith("LOG"))
-			{
-				log.fine("Ignored flight " + flightNumber );
+			if (!flightNumber.startsWith("LM") && !flightNumber.startsWith("LOG")) {
+				log.fine("Ignored flight " + flightNumber);
 				continue;
 			}
 			Flight flight = flightLookup[day].get(flightNumber);
@@ -759,7 +764,7 @@ public class LoganAirCrawler {
 			String icao = icaoLookup.get(airportName);
 			if (icao == null) {
 				log.log(Level.SEVERE, " Airport not found " + airportName);
-				//System.exit(55);
+				// System.exit(55);
 			}
 			if (scannedAirports.get(icao) == null)
 				scannedAirports.put(icao, new Airport(icao, airportName));
@@ -801,12 +806,9 @@ public class LoganAirCrawler {
 			}
 		}
 		// Cull uncomplete flights
-		Set<? extends RoundTrip> culledList = chains.stream()
-		  .filter(p -> !middles.containsKey(p.flights.get(0)) && !middles.containsKey(p.flights.get(p.flights.size()-1)))
-		  .collect(Collectors.toSet());			
-		
-		
-	
+		Set<? extends RoundTrip> culledList = chains.stream().filter(p -> !middles.containsKey(p.flights.get(0))
+				&& !middles.containsKey(p.flights.get(p.flights.size() - 1))).collect(Collectors.toSet());
+
 		return culledList;
 	}
 }
