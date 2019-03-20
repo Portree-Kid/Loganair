@@ -11,10 +11,12 @@ import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
+import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 public class Flight implements Serializable, Cloneable {
 
+	static Logger logger = Logger.getLogger(Flight.class.getName());
 	/**
 	 * 
 	 */
@@ -37,9 +39,11 @@ public class Flight implements Serializable, Cloneable {
 	}
 
 	public void clean() {
+		logger.finest("Before clean " + legs.size());
 		legs = legs.stream()
 				.filter(p -> p.getFrom() != null && p.getTo() != null)
 				.collect(Collectors.toList());
+		logger.finest("After clean " + legs.size());
 		legs = clean(legs);
 	}
 
@@ -52,6 +56,7 @@ public class Flight implements Serializable, Cloneable {
 				lastLeg = flightLeg;
 			}
 		}
+		logger.finest("After clean " + legs.size());
 		return ret;
 	}
 
