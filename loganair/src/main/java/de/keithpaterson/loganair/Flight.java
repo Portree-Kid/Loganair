@@ -88,8 +88,8 @@ public class Flight implements Serializable, Cloneable {
 		arrivalTime = df.parse(timeDate.split(" ")[0] + ":00");
 		String date = timeDate.split(" ")[1] + " " + (Calendar.getInstance()).get(Calendar.YEAR);
 		DateFormat f = DateFormat.getDateInstance(DateFormat.LONG, Locale.UK);
-		System.out.println(f.format(new Date()));
-		System.out.println(date);
+		logger.fine(f.format(new Date()));
+		logger.fine(date);
 	}
 
 	public void setArrivalTime(Date arrivalTime) {
