@@ -14,6 +14,7 @@ import java.io.UnsupportedEncodingException;
 import java.net.URISyntaxException;
 import java.net.URLEncoder;
 import java.text.DateFormat;
+import java.text.DateFormatSymbols;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -201,7 +202,7 @@ public class LoganAirCrawler {
 			Map<String, Flight> output = flightLookup[i].entrySet().stream()
 					.filter(e -> e.getValue().getNumber().startsWith("LM"))
 					.collect(Collectors.toMap(Map.Entry::getKey, e -> e.getValue()));
-
+			log.log(Level.INFO, "Dumping cleaned " + output.size() + " to flights_" + i + ".bin");
 			oos.writeObject(output);
 			oos.close();
 		}
@@ -219,16 +220,17 @@ public class LoganAirCrawler {
 	}
 
 	private static void loadCache() {
-		Calendar cal = Calendar.getInstance();
-
-		for (int i = Calendar.SUNDAY; i <= Calendar.SATURDAY; i++) {
+		 String dayNames[] = new DateFormatSymbols().getWeekdays();
+		 for (int i = Calendar.SUNDAY; i <= Calendar.SATURDAY; i++) {
 			File flightDatabase = new File("flights_" + i + ".bin");
 			if (flightDatabase.exists()) {
 				try {
 					ObjectInputStream ois = new ObjectInputStream(new FileInputStream(flightDatabase));
 					flightLookup[i] = (HashMap<String, Flight>) ois.readObject();
+					log.info("Read " + flightLookup[i].size() + " for " + dayNames[i]);
 					ois.close();
 				} catch (Exception e) {
+					log.log(Level.WARNING, e.toString(), e);
 					e.printStackTrace();
 					flightLookup[i] = new HashMap<String, Flight>();
 					flightDatabase.renameTo(new File(flightDatabase.getParentFile(), "flights_" + i + "_bak.bin"));
