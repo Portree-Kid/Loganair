@@ -152,6 +152,9 @@ public class LoganAirCrawler {
 		new CustomProxySelector("172.16.26.151", 81);
 		CloseableHttpClient build = clientBuilder.build();
 		int lastScan = scannedAirports.size();
+		Calendar c = Calendar.getInstance();
+		String dayNames[] = new DateFormatSymbols().getWeekdays();
+		log.info("Starting from Glasgow (EGPF) Day " + dayNames[c.get(Calendar.DAY_OF_WEEK)] + "("+ c.get(Calendar.DAY_OF_WEEK) + ")");
 		scannedAirports.put("EGPF", new Airport("EGPF", "GLASGOW"));
 		// While the list grows
 		while (lastScan != scannedAirports.size()) {
@@ -207,7 +210,9 @@ public class LoganAirCrawler {
 			oos.close();
 		}
 		flights = (ArrayList<Flight>) flights.stream()
-				.filter(p -> p.getArrivalTime() != null && p.getDepartureTime() != null).collect(Collectors.toList());
+				.filter(p -> p.getArrivalTime() != null && p.getDepartureTime() != null)
+				.filter(p -> p.getFrom() != null && p.getTo() != null)
+				.collect(Collectors.toList());
 		buildChains(flights);
 		getBases(flights);
 		// fillGaps(flights);
@@ -616,7 +621,8 @@ public class LoganAirCrawler {
 		Flight lastFlight = rt.getFlights().get(rt.getFlights().size() - 1);
 		for (int i = 0; i < flights.size(); i++) {
 			Flight flight = flights.get(i);
-			if (flight.getFrom().equals(lastFlight.getTo()) && flight.getDay() == lastFlight.getDay()) {
+			if (flight.getFrom().equals(lastFlight.getTo()) && 
+					flight.getDay() == lastFlight.getDay()) {
 				RoundTrip rt2 = new RoundTrip();
 				rt2.getFlights().addAll(rt.getFlights());
 				rt2.getFlights().add(flight);
