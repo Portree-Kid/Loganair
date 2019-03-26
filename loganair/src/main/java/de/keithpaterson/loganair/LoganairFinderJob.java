@@ -52,7 +52,7 @@ public class LoganairFinderJob {
 	@Autowired
 	private JobLauncher jobLauncher;
 
-	@Scheduled(cron = "0 */2 * * * ?")
+	@Scheduled(cron = "0 0 * * * ?")
 	public void crawl() throws Exception {
 		logger.info(" Job Started at :" + new Date());
 		JobParameters param = new JobParametersBuilder().addString("JobID", String.valueOf(System.currentTimeMillis()))
