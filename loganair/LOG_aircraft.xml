@@ -11,7 +11,7 @@
     <airline>LOG</airline>
     <home-port>EGPA</home-port>
     <required-aircraft>LOG_BN_2</required-aircraft>
-    <actype></actype>
+    <actype>BN2</actype>
     <offset>0</offset>
     <radius>8</radius>
     <flighttype>gate</flighttype>
@@ -25,7 +25,7 @@
     <airline>LOG</airline>
     <home-port>EGPA</home-port>
     <required-aircraft>LOG_BN_2</required-aircraft>
-    <actype></actype>
+    <actype>BN2</actype>
     <offset>0</offset>
     <radius>8</radius>
     <flighttype>gate</flighttype>
@@ -109,7 +109,7 @@
     <airline>LOG</airline>
     <home-port>EGPH</home-port>
     <required-aircraft>LOG-340</required-aircraft>
-    <actype>Saab-340B</actype>
+    <actype>SF3</actype>
     <offset>0</offset>
     <radius>12</radius>
     <flighttype>gate</flighttype>
@@ -123,7 +123,7 @@
     <airline>LOG</airline>
     <home-port>EGPD</home-port>
     <required-aircraft>LOG-340</required-aircraft>
-    <actype>Saab-340B</actype>
+    <actype>SF3</actype>
     <offset>0</offset>
     <radius>12</radius>
     <flighttype>gate</flighttype>
@@ -137,7 +137,7 @@
     <airline>LOG</airline>
     <home-port>EGPD</home-port>
     <required-aircraft>LOG-340</required-aircraft>
-    <actype>Saab-340B</actype>
+    <actype>SF3</actype>
     <offset>0</offset>
     <radius>12</radius>
     <flighttype>gate</flighttype>
@@ -151,7 +151,7 @@
     <airline>LOG</airline>
     <home-port>EGPE</home-port>
     <required-aircraft>LOG-340</required-aircraft>
-    <actype>Saab-340B</actype>
+    <actype>SF3</actype>
     <offset>0</offset>
     <radius>12</radius>
     <flighttype>gate</flighttype>
@@ -165,7 +165,7 @@
     <airline>LOG</airline>
     <home-port>EGPE</home-port>
     <required-aircraft>LOG-340</required-aircraft>
-    <actype>Saab-340B</actype>
+    <actype>SF3</actype>
     <offset>0</offset>
     <radius>12</radius>
     <flighttype>gate</flighttype>
@@ -179,7 +179,7 @@
     <airline>LOG</airline>
     <home-port>EGNV</home-port>
     <required-aircraft>LOG-340</required-aircraft>
-    <actype>Saab-340B</actype>
+    <actype>SF3</actype>
     <offset>0</offset>
     <radius>12</radius>
     <flighttype>gate</flighttype>
@@ -193,7 +193,7 @@
     <airline>LOG</airline>
     <home-port>EGYC</home-port>
     <required-aircraft>LOG-340</required-aircraft>
-    <actype>Saab-340B</actype>
+    <actype>SF3</actype>
     <offset>0</offset>
     <radius>12</radius>
     <flighttype>gate</flighttype>
@@ -207,7 +207,7 @@
     <airline>LOG</airline>
     <home-port>EGYC</home-port>
     <required-aircraft>LOG-340</required-aircraft>
-    <actype>Saab-340B</actype>
+    <actype>SF3</actype>
     <offset>0</offset>
     <radius>12</radius>
     <flighttype>gate</flighttype>
@@ -221,7 +221,7 @@
     <airline>LOG</airline>
     <home-port>EGPF</home-port>
     <required-aircraft>LOG-340</required-aircraft>
-    <actype>Saab-340B</actype>
+    <actype>SF3</actype>
     <offset>0</offset>
     <radius>12</radius>
     <flighttype>gate</flighttype>
@@ -235,7 +235,7 @@
     <airline>LOG</airline>
     <home-port>EGCC</home-port>
     <required-aircraft>LOG-340</required-aircraft>
-    <actype>Saab-340B</actype>
+    <actype>SF3</actype>
     <offset>0</offset>
     <radius>12</radius>
     <flighttype>gate</flighttype>
@@ -249,7 +249,7 @@
     <airline>LOG</airline>
     <home-port>EGCC</home-port>
     <required-aircraft>LOG-340</required-aircraft>
-    <actype>Saab-340B</actype>
+    <actype>SF3</actype>
     <offset>0</offset>
     <radius>12</radius>
     <flighttype>gate</flighttype>
@@ -263,7 +263,7 @@
     <airline>LOG</airline>
     <home-port>EGPE</home-port>
     <required-aircraft>LOG-340</required-aircraft>
-    <actype>Saab-340B</actype>
+    <actype>SF3</actype>
     <offset>0</offset>
     <radius>12</radius>
     <flighttype>gate</flighttype>
